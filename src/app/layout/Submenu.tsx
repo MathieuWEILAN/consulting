@@ -12,7 +12,7 @@ const Submenu = ({
   if (arrayOfSubmenu.length > 0)
     return (
       <ul
-        className={`w-fit lg:absolute z-10 h-fit lg:shadow-2xl lg:left-0 top-[100px] lg:py-2.5 lg:p-2.5 lg:rounded lg:bg-slate-50 ml-10 lg:ml-0`}
+        className={`w-fit lg:absolute z-10 h-fit lg:shadow-2xl lg:left-0 top-[58px] lg:py-2.5 lg:p-2.5 lg:rounded lg:bg-slate-50 ml-10 lg:ml-0`}
       >
         {arrayOfSubmenu.map((el, i) => {
           return (

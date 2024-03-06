@@ -4,6 +4,7 @@ import * as React from "react";
 import Image from "next/image";
 import Submenu from "./Submenu";
 import { menu } from "../data";
+import PhoneIcon from "../assets/svg/PhoneIcon";
 
 //Déclaration d'interface
 interface DropdownState {
@@ -30,11 +31,10 @@ const Header = () => {
 
   const handleMouseLeave = () => {
     const newState = { ...isDropdownVisible, isVisible: false };
-
     setDropdownVisible(newState);
   };
   return (
-    <header className="flex w-full h-24 z-50 bg-slate-50 fixed top-0 lg:shadow-xl text-slate-950 px-2.5">
+    <header className="flex w-full h-20 lg:h-14 z-50 bg-slate-50 fixed top-0 lg:shadow-xl text-slate-950 py-4 lg:py-0 px-2.5">
       <div className="lg:container mx-auto flex items-center justify-between w-full px-4 lg:px-0">
         <a href="/">
           <Image
@@ -68,9 +68,13 @@ const Header = () => {
             })}
           </ul>
         </nav>
+        <a href="tel:0614904645" className="flex space-x-2 items-center">
+          <PhoneIcon />
+          <span>06 14 90 46 45</span>
+        </a>
 
         <button
-          className="w-14 h-14 shadow-xl rounded-full lg:hidden"
+          className="w-14 h-14 shadow-lg rounded-full lg:hidden"
           onClick={() => {
             setIsMenuMobile(!isMenuMobile);
           }}
@@ -94,7 +98,7 @@ const Header = () => {
         </button>
 
         <nav
-          className={`lg:hidden w-screen h-screen right-0 top-[96px] absolute lg:hidden flex py-10 bg-slate-50 transform transition-transform duration-1000 menu-mobile-bg ${
+          className={`lg:hidden w-screen h-screen right-0 top-[80px] absolute lg:hidden flex py-4 bg-slate-50 transform transition-transform duration-500 menu-mobile-bg ${
             isMenuMobile ? "-translate-x-0" : "translate-x-full"
           }`}
         >

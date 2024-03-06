@@ -2,31 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer base {
+  body {
+    @apply text-slate-950;
+  }
+  h2 {
+    @apply text-[30px] lg:text-[48px] font-bold my-4 flex items-center justify-center text-center;
+  }
+  h3 {
+    @apply text-xl font-bold my-2;
+  }
+  section {
+    @apply py-4;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  p {
+    @apply my-2.5;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Pour les navigateurs WebKit (Safari, Chrome, etc.) */
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE et Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
   .text-balance {
     text-wrap: balance;
   }
@@ -34,7 +38,15 @@ body {
   .menu-mobile-bg {
     background: linear-gradient(135deg, rgb(248 250 252) 85%, #16a34a 10%);
   }
-
+  .split-bg-left {
+    background: linear-gradient(50deg, #effdf4 40%, white 40%);
+  }
+  .split-bg-right {
+    background: linear-gradient(130deg, white 46%, #effdf4 40%);
+  }
+  .content-empty {
+    content: "";
+  }
   @keyframes scaleDown {
     from {
       transform: scale(1.25);
@@ -43,8 +55,20 @@ body {
       transform: scale(1);
     }
   }
+  @keyframes scaleUp {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.25);
+    }
+  }
 
   .animate-scale-down {
     animation: scaleDown 0.5s ease-in-out forwards;
+  }
+
+  .animate-scale-up {
+    animation: scaleUp 0.5s ease-in-out forwards;
   }
 }

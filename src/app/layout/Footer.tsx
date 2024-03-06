@@ -1,4 +1,7 @@
+import { useReducer } from "react";
+
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <footer className="bg-slate-50 w-full">
       <div className="container w-full mx-auto p-4 md:py-8">
@@ -13,7 +16,7 @@ const Footer = () => {
               alt="Flowbite Logo"
             /> */}
             <span className="self-center text-2xl font-semibold whitespace-nowrap">
-              Flowbite
+              Audicée
             </span>
           </a>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-slate-950 sm:mb-0 ">
@@ -40,12 +43,12 @@ const Footer = () => {
           </ul>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
-        <span className="block text-sm text-slate-950 sm:text-center ">
-          © 2023{" "}
+        <span className="flex text-sm text-slate-950 sm:text-center justify-center">
+          © {year} &nbsp;
           <a href="https://flowbite.com/" className="hover:underline">
-            Flowbite™
+            Audicée
           </a>
-          . All Rights Reserved.
+          . Tous droits réservés.
         </span>
       </div>
     </footer>
