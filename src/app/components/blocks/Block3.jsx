@@ -1,7 +1,5 @@
-import Card from "../Card";
 import Image from "next/image";
 import Button from "../Button";
-import hero3 from "../../assets/img/hero3.jpg";
 import maison from "../../assets/img/maison.png";
 
 const Block3 = () => {
@@ -26,7 +24,6 @@ const Block3 = () => {
           alt="Vercel Logo"
           width={700}
           height={24}
-          priority
           className={`h-96 w-full lg:w-1/2 object-contain bg-white object-center`}
         />
       </div>

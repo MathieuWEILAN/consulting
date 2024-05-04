@@ -1,8 +1,6 @@
 import Image from "next/image";
-import hero1 from "../assets/img/hero1.png";
-import hero2 from "../assets/img/hero2.png";
 import { useState } from "react";
-import { Key } from "readline";
+import { StaticImageData } from "next/image";
 
 const Card = ({
   image,
@@ -12,7 +10,7 @@ const Card = ({
   key,
   step,
 }: {
-  image: object;
+  image: StaticImageData;
   text: string;
   title: string;
   href: string;
@@ -40,7 +38,6 @@ const Card = ({
         alt="Vercel Logo"
         width={700}
         height={24}
-        priority
         className={`h-full w-full object-cover bg-white object-center ${
           isHovered ? "animate-scale-up" : "animate-scale-down"
         }`}

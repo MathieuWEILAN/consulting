@@ -1,12 +1,12 @@
-import { ImgProps } from "next/dist/shared/lib/get-img-props";
-import hero1 from "./assets/img/hero1.png";
-import hero2 from "./assets/img/hero2.png";
-import hero3 from "./assets/img/hero3.jpg";
+import step1 from "./assets/img/step1.jpg";
+import step2 from "./assets/img/step2.jpg";
+import step3 from "./assets/img/step3.jpg";
+import step4 from "./assets/img/step4.jpg";
+import step5 from "./assets/img/step5.jpg";
 import zizou from "./assets/img/téléchargement.jpeg";
-import photo1 from "./assets/img/photo1.jpg";
 import photo2 from "./assets/img/photo2.jpg";
-import photo3 from "./assets/img/photo3.jpg";
-import photo4 from "./assets/img/eau.jpg";
+import trees from "./assets/img/trees.jpg";
+import { StaticImageData } from "next/dist/shared/lib/get-img-props";
 
 interface SubmenuItem {
   title: string;
@@ -21,9 +21,9 @@ interface MenuItem {
 }
 
 export type CardType = {
-  image: ImgProps;
-  title: string;
-  text: string;
+  image?: StaticImageData;
+  title?: string;
+  text?: string;
   href?: string;
 };
 
@@ -31,83 +31,26 @@ export type CommentsCardType = {
   comment: string;
   firstName: string;
   lastName: string;
-  photo?: ImgProps;
+  photo?: StaticImageData;
   stars: number;
 };
 export const menu: MenuItem[] = [
   {
-    titleName: "Nos solutions",
-    titleHref: "/nos-solutions",
-    arraySubmenu: [
-      {
-        title: "Solaire",
-        subtitle: "Panneaux photovoltaïques",
-        href: "/panneaux-solaires",
-      },
-      {
-        title: "Chauffage",
-        subtitle: "Pompe à chaleurs air",
-        href: "/chauffage",
-      },
-      {
-        title: "Eaux sanitaires",
-        subtitle: "Ballon thermodynamique",
-        href: "/eaux-sanitaire",
-      },
-      {
-        title: "Isolation",
-        subtitle: "Isolation thermique par l'extérieur",
-        href: "/isolation-thermique",
-      },
-    ],
+    titleName: "Qui sommes-nous",
+    titleHref: "/qui-sommes-nous",
+    arraySubmenu: [],
   },
   {
-    titleName: "Aides & Subventions",
-    titleHref: "/aides-subventions",
-    arraySubmenu: [
-      {
-        title: "CEE",
-        subtitle: "Dispositif des CEE",
-        href: "/dispositifs-cee",
-      },
-      {
-        title: "TVA",
-        subtitle: "La TVA 5,5",
-        href: "/tva-55",
-      },
-      {
-        title: "Prime autoconsommation",
-        subtitle: "",
-        href: "/prime-autoconsommation",
-      },
-    ],
+    titleName: "Nos services",
+    titleHref: "/nos-services",
+    arraySubmenu: [],
   },
   {
-    titleName: "Notre Groupe",
-    titleHref: "/notre-groupe",
-    arraySubmenu: [
-      {
-        title: "Notre Histoire",
-        subtitle: "",
-        href: "/notre-histoire",
-      },
-      {
-        title: "Notre Equipe",
-        subtitle: "",
-        href: "/notre-equipe",
-      },
-      {
-        title: "Nos Missions",
-        subtitle: "",
-        href: "/nos-missions",
-      },
-      {
-        title: "Nos Engagement",
-        subtitle: "",
-        href: "/nos-engagements",
-      },
-    ],
+    titleName: "Mon Accompagnateur Rénov'",
+    titleHref: "/mon-accompagnateur-renov",
+    arraySubmenu: [],
   },
+
   {
     titleName: "Contact",
     titleHref: "/contact",
@@ -115,57 +58,90 @@ export const menu: MenuItem[] = [
   },
 ];
 
-export const arrayCards: CardType[] = [
+export const arrayCards = [
   {
-    image: hero1,
+    image: step1,
     title: "ÉTUDE ÉNERGÉTIQUE",
     text: "Réalisez une étude complète de votre habitat avec un de nos experts énergétiques puis recevez instantanément votre étude et le devis détaillé de votre projet aides déduites.",
     href: "/lala",
   },
   {
-    image: hero2,
+    image: step2,
     title: "VISITE TECHNIQUE",
     text: "Un de nos auditeurs énergétiques se déplace à votre domicile afin de confirmer la faisabilité technique de votre projet de rénovation énergétique.",
     href: "/lolo",
   },
   {
-    image: hero1,
+    image: step3,
     title: "DÉMARCHES ADMINISTRATIVES",
     text: "Un chargé de projet dédié réalise pour vous toutes les démarches nécessaires à l’obtention de vos aides ainsi que les formalités administratives pour vos travaux.",
     href: "/lele",
   },
   {
-    image: hero3,
-    title: "INSTALLATION",
+    image: step4,
+    title: "SUPERVISATION DES TRAVAUX",
     text: "Un de nos professionnels certifiés RGE se déplace chez vous pour réaliser vos travaux de rénovation énergétique. Vos travaux sont couverts par notre garantie décennale.",
     href: "/lili",
   },
   {
-    image: hero2,
+    image: step5,
     title: "SUIVI CLIENT",
     text: "Bénéficiez d’un service client à votre écoute pour toutes vos questions durant toute la durée de vie de votre installation.",
     href: "/lulu",
   },
 ];
 
-export const prestationCards: CardType[] = [
+export const prestationCards = [
   {
-    image: photo1,
-    title: "PANNEAUX",
-    text: "Nous vous assistons dans le devis et l'installation de panneaux solaires.",
-    href: "/lala",
+    image: step1,
+    title: "Expertise Technique",
+    text: "Notre équipe d'experts est composée de professionnels chevronnés possédant une connaissance approfondie des meilleures pratiques en matière d'efficacité énergétique.",
+    // href: "/lala",
   },
   {
     image: photo2,
-    title: "POMPES A CHALEUR",
-    text: "Nous vous assistons dans le devis et l'installation de pompe à chaleur afin de mieux re-distribuer l'énergie dans votre maison.",
-    href: "/lolo",
+    title: "Solutions Personnalisées",
+    text: "Nous comprenons que chaque entreprise est unique, c'est pourquoi nous développons des solutions sur mesure adaptées à vos besoins spécifiques.",
+    // href: "/lolo",
   },
   {
-    image: photo4,
-    title: "Chauffe eau",
-    text: "Nous vous assistons dans le devis et l'installation de pompe à chaleur afin de  chauffer écologiquement votre habitat.",
-    href: "/lele",
+    image: trees,
+    title: "Engagement envers l’Environnement",
+    text: "Chez Audicée, nous sommes fiers de notre engagement envers la durabilité environnementale. En travaillant avec nous, vous contribuez à un avenir plus vert pour tous.",
+    // href: "/lele",
+  },
+];
+
+export const homePageWhy = [
+  {
+    // image: step1,
+    title: "Expertise technique approfondie",
+    text: "Un professionnel possède les connaissances techniques pour analyser de manière les performances énergétiques actuelles de votre habitation. Grâce à des outils spécialisés et à son expertise, l'auditeur peut identifier précisément où et comment votre maison perd de l'énergie et vous proposer les solutions les plus adaptées pour y remédier.",
+  },
+  {
+    // image: photo2,
+    title: "Conseils personnalisés",
+    text: "Un auditeur énergétique prendra en compte les spécificités de votre maison ainsi que vos besoins personnels pour vous recommander des mesures personnalisées. Que ce soit l'isolation, le chauffage, la ventilation, ou l'utilisation d'énergies renouvelables, vous aurez un plan sur mesure qui maximise les bénéfices énergétiques.",
+  },
+  {
+    // image: trees,
+    title: "Économies à long terme",
+    text: "L'accompagnement par un professionnel garantit que des investissements judicieux. En ciblant les interventions qui offriront le meilleur retour sur investissement, un auditeur énergétique vous aide à réduire durablement vos factures d'énergie.",
+  },
+  {
+    // image: trees,
+    title: "Accès à des aides financières",
+    text: "De nombreuses subventions et aides financières sont disponibles pour encourager les rénovations énergétiques. Un professionnel de l'audit énergétique est à jour avec les dernières informations et peut vous guider dans le processus d'obtention de ces aides, en s'assurant que votre projet respecte les critères requis.",
+  },
+  {
+    // image: trees,
+    title: "Contribution à la protection de l'environnement",
+    text: "En réduisant la consommation énergétique de votre maison, vous contribuez activement à la lutte contre le changement climatique. L'audit énergétique vous aide à faire des choix qui non seulement améliorent votre cadre de vie mais aussi réduisent votre empreinte écologique.",
+  },
+  {
+    // image: trees,
+    title: "Assurance de qualité et de conformité",
+    text: "Les professionnels de l'audit énergétique veillent à ce que toutes les interventions respectent les normes en vigueur. Cela vous assure non seulement une tranquillité d'esprit mais garantit également la sécurité et la conformité de votre habitation.",
   },
 ];
 

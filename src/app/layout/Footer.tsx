@@ -1,9 +1,11 @@
-import { useReducer } from "react";
+"use client";
+import BlockForm from "../components/blocks/BlockForm";
 
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <footer className="bg-slate-50 w-full">
+      <BlockForm />
       <div className="container w-full mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a

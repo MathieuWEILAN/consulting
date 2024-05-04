@@ -6,7 +6,6 @@ import Submenu from "./Submenu";
 import { menu } from "../data";
 import PhoneIcon from "../assets/svg/PhoneIcon";
 
-//Déclaration d'interface
 interface DropdownState {
   isVisible: boolean;
   type: string;
@@ -19,8 +18,20 @@ const Header = () => {
       type: "",
     }
   );
-
+  const [scrollY, setScrollY] = React.useState(0);
   const [isMenuMobile, setIsMenuMobile] = React.useState<boolean>(false);
+  const refA = React.useRef<HTMLAnchorElement>(null);
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleMouseEnter = (menu: string) => {
     const newState = { ...isDropdownVisible };
@@ -33,31 +44,49 @@ const Header = () => {
     const newState = { ...isDropdownVisible, isVisible: false };
     setDropdownVisible(newState);
   };
+
+  const handleClick = () => {
+    if (refA.current) {
+      refA.current.focus();
+    }
+  };
+  const handleLeave = () => {
+    if (refA.current) {
+      refA.current.blur();
+    }
+  };
+
+  const headerBgClass =
+    scrollY > 150
+      ? "lg:bg-slate-50 shadow-xl bg-stone-50 text-stone-950"
+      : "lg:bg-transparent bg-stone-50 lg:text-white";
+
   return (
-    <header className="flex w-full h-20 lg:h-14 z-50 bg-slate-50 fixed top-0 lg:shadow-xl text-slate-950 py-4 lg:py-0 px-2.5">
+    <header
+      className={`${headerBgClass} flex w-full h-20 lg:h-14 z-50 fixed top-0 py-4 lg:py-0 px-2.5`}
+    >
       <div className="lg:container mx-auto flex items-center justify-between w-full px-4 lg:px-0">
-        <a href="/">
-          <Image
-            src="/vercel.svg"
-            alt="Vercel Logo"
-            width={100}
-            height={24}
-            priority
-          />
+        <a
+          href="/"
+          ref={refA}
+          onMouseEnter={handleClick}
+          onMouseLeave={handleLeave}
+        >
+          <Image src="/vercel.svg" alt="Vercel Logo" width={100} height={24} />
         </a>
         <nav className="h-full flex items-center w-fit hidden lg:block">
-          <ul className="flex items-center text-slate-950 w-full h-full">
+          <ul className="flex items-center w-full h-full">
             {menu.map((el, i) => {
               return (
                 <li
                   key={i}
-                  className="h-[105%] flex items-center relative bg-transparent group hover:text-green-600 transition duration-300 px-4 mx-2.5"
+                  className="h-[105%] flex items-center relative group hover:text-green-600 transition duration-300 px-4 mx-2.5"
                   onMouseEnter={() => handleMouseEnter(el.titleName)}
                   onMouseLeave={handleMouseLeave}
                 >
                   <a className="cursor-pointer" href={el.titleHref}>
                     {el.titleName}{" "}
-                    <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-green-600"></span>
+                    <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-primaryGreen"></span>
                   </a>
                   {isDropdownVisible.isVisible &&
                     isDropdownVisible.type === el.titleName && (
@@ -68,7 +97,10 @@ const Header = () => {
             })}
           </ul>
         </nav>
-        <a href="tel:0614904645" className="flex space-x-2 items-center">
+        <a
+          href="tel:0614904645"
+          className="hidden lg:flex space-x-2 items-center bg-stone-50 px-4 py-2 rounded text-slate-950 hover:bg-primaryGreen hover:text-white transition duration-300"
+        >
           <PhoneIcon />
           <span>06 14 90 46 45</span>
         </a>
@@ -81,17 +113,17 @@ const Header = () => {
           role="button"
         >
           <div
-            className={`inset-0 w-6 h-0.5 flex items-center justify-center bg-green-600 transition duration-400 m-auto rounded ${
+            className={`inset-0 w-6 h-0.5 flex items-center justify-center bg-primaryGreen transition duration-400 m-auto rounded ${
               isMenuMobile ? "rotate-45" : ""
             }`}
           ></div>
           <div
-            className={`inset-0 w-6 h-0.5 flex items-center justify-center bg-green-600 transition duration-400 m-auto rounded ${
+            className={`inset-0 w-6 h-0.5 flex items-center justify-center bg-primaryGreen transition duration-400 m-auto rounded ${
               isMenuMobile ? " -rotate-45 !-mt-0.5" : "mt-1"
             }`}
           ></div>
           <div
-            className={`inset-0 w-6 h-0.5 flex items-center justify-center bg-green-600 transition duration-400 m-auto rounded ${
+            className={`inset-0 w-6 h-0.5 flex items-center justify-center bg-primaryGreen transition duration-400 m-auto rounded ${
               isMenuMobile ? " -rotate-45 !-mt-0.5" : "mt-1"
             }`}
           ></div>
@@ -116,7 +148,7 @@ const Header = () => {
                     href={el.titleHref}
                   >
                     {el.titleName}
-                    <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-green-600"></span>
+                    <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-primaryGreen"></span>
                   </a>
                   <Submenu arrayOfSubmenu={el.arraySubmenu} />
                 </li>
