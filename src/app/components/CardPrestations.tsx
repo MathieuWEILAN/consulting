@@ -6,13 +6,11 @@ const CardPrestations = ({
   text,
   title,
   href,
-  key,
 }: {
   image: StaticImageData;
   text: string;
   title: string;
   href: string;
-  key: number;
 }) => {
   return (
     <div className="h-[560px] w-full bg-green-100 rounded-lg overflow-hidden relative shadow-xl mx-auto my-5">

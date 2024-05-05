@@ -36,8 +36,8 @@ export type CommentsCardType = {
 };
 export const menu: MenuItem[] = [
   {
-    titleName: "Qui sommes-nous",
-    titleHref: "/qui-sommes-nous",
+    titleName: "Accueil",
+    titleHref: "/",
     arraySubmenu: [],
   },
   {
@@ -63,31 +63,26 @@ export const arrayCards = [
     image: step1,
     title: "ÉTUDE ÉNERGÉTIQUE",
     text: "Réalisez une étude complète de votre habitat avec un de nos experts énergétiques puis recevez instantanément votre étude et le devis détaillé de votre projet aides déduites.",
-    href: "/lala",
   },
   {
     image: step2,
     title: "VISITE TECHNIQUE",
     text: "Un de nos auditeurs énergétiques se déplace à votre domicile afin de confirmer la faisabilité technique de votre projet de rénovation énergétique.",
-    href: "/lolo",
   },
   {
     image: step3,
     title: "DÉMARCHES ADMINISTRATIVES",
     text: "Un chargé de projet dédié réalise pour vous toutes les démarches nécessaires à l’obtention de vos aides ainsi que les formalités administratives pour vos travaux.",
-    href: "/lele",
   },
   {
     image: step4,
     title: "SUPERVISATION DES TRAVAUX",
     text: "Un de nos professionnels certifiés RGE se déplace chez vous pour réaliser vos travaux de rénovation énergétique. Vos travaux sont couverts par notre garantie décennale.",
-    href: "/lili",
   },
   {
     image: step5,
     title: "SUIVI CLIENT",
     text: "Bénéficiez d’un service client à votre écoute pour toutes vos questions durant toute la durée de vie de votre installation.",
-    href: "/lulu",
   },
 ];
 

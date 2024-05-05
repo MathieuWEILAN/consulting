@@ -63,7 +63,7 @@ const Header = () => {
 
   return (
     <header
-      className={`${headerBgClass} flex w-full h-20 lg:h-14 z-50 fixed top-0 py-4 lg:py-0 px-2.5`}
+      className={`${headerBgClass} flex w-full h-20 lg:h-14 z-50 fixed top-0 py-4 lg:py-0 px-2.5 text-lg`}
     >
       <div className="lg:container mx-auto flex items-center justify-between w-full px-4 lg:px-0">
         <a

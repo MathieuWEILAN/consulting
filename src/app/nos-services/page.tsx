@@ -11,29 +11,31 @@ import vente from "../assets/icons/vente.png";
 import Block2 from "../components/blocks/Block2";
 import { prestationCards } from "../data";
 import Image from "next/image";
+import { motion, Variants } from "framer-motion";
 import family from "../assets/img/family.jpg";
+import TextImg from "../components/TextImg";
+import travaux from "../assets/img/travaux-renovation-globale.jpg";
 
 const NosServicesPage = () => {
   return (
     <div>
       <Hero title="Nos services" />
-      <section className="w-full p-10 container mx-auto lg:p-24">
-        <p className="text-xl lg:text-2xl my-10">
-          Nos services d&apos;audit énergétique couvrent tous les aspects de
-          votre consommation d&apos;énergie, de l&apos;analyse de vos factures à
-          l&apos;inspection de vos équipements. Nous identifions les
-          inefficacités, proposons des solutions pratiques et durables, et
-          suivons les performances pour garantir des résultats optimaux à long
-          terme.
-        </p>
-      </section>
-      <section className="grad-green py-10">
+      <TextImg
+        img={travaux}
+        text="Nos services d'audit énergétique couvrent tous les aspects de votre
+          consommation d'énergie, de l'analyse de vos factures à l'inspection de
+          vos équipements. Nous identifions les inefficacités, proposons des
+          solutions pratiques et durables, et suivons les performances pour
+          garantir des résultats optimaux à long terme."
+      />
+
+      <section className="bg-primaryGreen py-10">
         <h2 className="container mx-auto">Pourquoi Choisir Audicée ?</h2>
         <Block2 array={prestationCards} />
       </section>
-      <section className="w-full py-10 flex flex-col items-center justify-center container mx-auto">
+      {/* <section className="w-full py-10 flex flex-col items-center justify-center container mx-auto">
         <h2 className="container mx-auto text-center">Un Audit par Étapes</h2>
-        <div className="lg:container lg:mx-auto p-5 w-full flex lg:justify-center flex-col lg:flex-row lg:flex-wrap">
+        <div className="lg:container lg:mx-auto w-full flex lg:justify-center flex-col lg:flex-row lg:flex-wrap">
           <Icon
             img={study}
             title={"Études énergétique"}
@@ -78,9 +80,10 @@ const NosServicesPage = () => {
             }
           />
         </div>
-      </section>
-      <section className="bg-primaryBlue w-full h-full lg:py-20 py-5 px-5">
-        <div className="mx-auto container shadow-xl bg-stone-50 rounded-xl flex flex-col lg:flex-row w-full justify-between px-0 overflow-hidden">
+      </section> */}
+
+      <section className="w-full h-full">
+        <div className="mx-auto  flex flex-col lg:flex-row w-full justify-between px-0 overflow-hidden">
           <div className="p-5 lg:p-20 flex flex-col justify-center">
             <h2>Avec Audicée :</h2>
             <ul>
@@ -101,7 +104,7 @@ const NosServicesPage = () => {
                 l&apos;expertise de nos professionnels
               </li>
               <li className="text-lg lg:text-2xl my-2.5">
-                <strong className="text-primaryBlue">Préservez</strong>
+                <strong className="text-primaryBlue">Préservez </strong>
                 l&apos;environnement
               </li>
             </ul>
@@ -109,7 +112,7 @@ const NosServicesPage = () => {
           <Image
             src={family}
             alt=""
-            className="shadow-xl w-full lg:w-1/2"
+            className="shadow-xl w-full lg:w-1/2 h-full"
             width={700}
           ></Image>
         </div>

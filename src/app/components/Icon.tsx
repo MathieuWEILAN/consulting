@@ -33,14 +33,14 @@ const Icon = ({
       className="flex flex-col items-center py-4 w-full lg:w-1/3"
       variants={opacity}
     >
-      <div className="w-full flex flex-col items-center lg:mb-10 lg:mb-0">
+      <div className="w-full flex flex-col items-center">
         <div className="border-2 border-black rounded-full w-24 h-24 flex items-center justify-center">
           <Image src={img} alt={title} width={60} height={60} />
         </div>
         <h2 className="text-[30px] text-center lg:text-left">{title}</h2>
-        <span className="italic text-base">{subTitle}</span>
+        <span className="italic text-base px-4">{subTitle}</span>
       </div>
-      <p className="w-full mt-2.5 lg:mt-10 lg:px-10">{text}</p>
+      <p className="w-full mt-2.5 lg:mt-4 px-4">{text}</p>
     </motion.div>
   );
 };

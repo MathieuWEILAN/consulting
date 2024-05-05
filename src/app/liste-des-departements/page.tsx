@@ -11,10 +11,10 @@ const ListeDesDepartementsPage = () => {
         <div className="container mx-auto p-5 lg:p-20">
           <h2>Nos Zones d&apos;Intervention en France</h2>
           <p>
-            Chez [Nom de l&apos;Entreprise], nous sommes fiers de fournir des
-            services d&apos;audit et de rénovation énergétique de premier plan à
-            travers de nombreux départements en France, avec une présence forte
-            et stratégique en Île-de-France.
+            Chez Audicée, nous sommes fiers de fournir des services d&apos;audit
+            et de rénovation énergétique de premier plan à travers de nombreux
+            départements en France, avec une présence forte et stratégique en
+            Île-de-France.
           </p>
           <h3>Une forte présence en Île-de-France</h3>
           <p>

@@ -68,7 +68,7 @@ const BlockForm = () => {
   };
 
   return (
-    <div className="w-full h-auto grad-blue">
+    <section className="w-full h-auto bg-primaryBlue">
       <div className="lg:container px-5 lg:px-0 mx-auto flex flex-col lg:flex-row items-center justify-between">
         <div className="w-full lg:w-1/2 p-5 lg:p-10 bg-stone-50 rounded-lg shadow-xl lg:mr-10 my-5 lg:my-0">
           <h3>CONTACTEZ-NOUS</h3>
@@ -88,7 +88,7 @@ const BlockForm = () => {
         >
           <input
             type="text"
-            placeholder="name"
+            placeholder="Nom"
             name="name"
             className="w-full"
             onChange={handleInputChange}
@@ -96,21 +96,21 @@ const BlockForm = () => {
           <input
             type="text"
             name="first_name"
-            placeholder="first name"
+            placeholder="Prénom"
             className="w-full"
             onChange={handleInputChange}
           />
           <input
             type="email"
             name="email"
-            placeholder="email"
+            placeholder="Email"
             className="w-full"
             onChange={handleInputChange}
           />
           <input
             type="objet"
             name="objet"
-            placeholder="objet"
+            placeholder="Objet"
             className="w-full"
             onChange={handleInputChange}
           />
@@ -130,7 +130,7 @@ const BlockForm = () => {
           />
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 export default BlockForm;

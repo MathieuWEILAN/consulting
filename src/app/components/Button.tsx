@@ -4,11 +4,13 @@ const Button = ({
   text,
   action,
   className,
+  value,
   type,
 }: {
   text: string;
   action?: MouseEventHandler;
   className?: string;
+  value?: string;
   type?: "button" | "submit" | "reset";
 }) => {
   return (

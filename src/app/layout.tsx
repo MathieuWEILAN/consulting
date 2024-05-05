@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="w-screen">
+    <html lang="en" className="w-screen overflow-x-hidden">
       <body className={roboto.className}>
         <Header />
         {children}
