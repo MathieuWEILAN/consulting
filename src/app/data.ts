@@ -41,8 +41,8 @@ export const menu: MenuItem[] = [
     arraySubmenu: [],
   },
   {
-    titleName: "Nos services",
-    titleHref: "/nos-services",
+    titleName: "Audits",
+    titleHref: "/audits",
     arraySubmenu: [],
   },
   {

@@ -63,7 +63,7 @@ const Header = () => {
 
   return (
     <header
-      className={`${headerBgClass} flex w-full h-20 lg:h-14 z-50 fixed top-0 py-4 lg:py-0 px-2.5 text-lg`}
+      className={`${headerBgClass} flex w-full h-20 lg:h-14 z-50 fixed top-0 py-4 lg:py-0 px-2.5 text-lg max-w-[2000px]`}
     >
       <div className="lg:container mx-auto flex items-center justify-between w-full px-4 lg:px-0">
         <a
@@ -111,6 +111,7 @@ const Header = () => {
             setIsMenuMobile(!isMenuMobile);
           }}
           role="button"
+          name="menu mobile"
         >
           <div
             className={`inset-0 w-6 h-0.5 flex items-center justify-center bg-primaryGreen transition duration-400 m-auto rounded ${

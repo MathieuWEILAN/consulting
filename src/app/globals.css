@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply text-slate-950 bg-stone-50;
+    @apply text-slate-950 bg-stone-50 max-w-[2000px] mx-auto;
   }
   h1 {
     @apply my-4 flex text-2xl lg:text-[50px] leading-8 tracking-wide;

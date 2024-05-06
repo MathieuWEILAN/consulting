@@ -8,7 +8,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 const BlockLogo = ({ className }: { className?: string }) => {
   return (
-    <section className={`w-full ${className ? className : "bg-primaryBlue"}`}>
+    <section className={`w-full ${className} bg-primaryBlue`}>
       <motion.div
         className="w-full mx-auto grid grid-cols-5 py-5 container"
         initial={{ opacity: 0 }}

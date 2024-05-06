@@ -6,14 +6,12 @@ const Card = ({
   image,
   text,
   title,
-  href,
   key,
   step,
 }: {
   image: StaticImageData;
   text: string;
   title: string;
-  href: string;
   key: number;
   step: number;
 }) => {
@@ -52,20 +50,15 @@ const Card = ({
       >
         {step}
       </span>
-      <a href={href} aria-label={title}>
-        <div
-          className={`bg-slate-50 w-full absolute bottom-0 bg-opacity-90 group flex items-center p-4 flex-col transition-all ease-in-out duration-500 ${
-            isHovered ? "max-h-96" : "max-h-24 h-24 justify-center"
-          }`}
-        >
-          <h3 className="text-left w-full">
-            {title}
-            {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-slate-950"></span> */}
-          </h3>
+      <div
+        className={`bg-slate-50 w-full absolute bottom-0 bg-opacity-90 group flex items-center p-4 flex-col transition-all ease-in-out duration-500 ${
+          isHovered ? "max-h-96" : "max-h-24 h-24 justify-center"
+        }`}
+      >
+        <h3 className="text-left w-full">{title}</h3>
 
-          {isHovered && <span>{text}</span>}
-        </div>
-      </a>
+        {isHovered && <span>{text}</span>}
+      </div>
     </div>
   );
 };

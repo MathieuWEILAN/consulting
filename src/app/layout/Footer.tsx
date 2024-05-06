@@ -3,12 +3,13 @@ import BlockForm from "../components/blocks/BlockForm";
 import Image from "next/image";
 import BlockLogo from "../components/blocks/BlockLogo";
 import { menu } from "../data";
+import Link from "next/link";
 
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <footer className="bg-slate-50 w-full">
-      <BlockLogo className="split-bg-logo pt-5" />
+      <BlockLogo className="pt-4" />
       <BlockForm />
       <div className="container w-full mx-auto p-4 md:py-8">
         <div className="sm:flex items-start sm:justify-between">
@@ -20,7 +21,7 @@ const Footer = () => {
               Audicée
             </span>
           </a>
-          <div className="flex space-x-10">
+          <div className="flex space-x-10 pb-8">
             <div>
               <h3>Navigation</h3>
               <ul>
@@ -53,9 +54,9 @@ const Footer = () => {
         <hr className="border-gray-200 sm:mx-auto  lg:my-4" />
         <span className="flex text-sm text-slate-950 sm:text-center justify-center">
           © {year} &nbsp;
-          <a href="https://flowbite.com/" className="hover:underline">
+          <Link href="/" className="hover:underline">
             Audicée
-          </a>
+          </Link>
           . Tous droits réservés.
         </span>
       </div>

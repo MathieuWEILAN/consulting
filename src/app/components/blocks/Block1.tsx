@@ -5,7 +5,6 @@ type CardType = {
   image: StaticImageData;
   title: string;
   text: string;
-  href: string;
 };
 
 const Block1 = ({ array }: { array: CardType[] }) => {
@@ -23,7 +22,6 @@ const Block1 = ({ array }: { array: CardType[] }) => {
               text={el.text}
               image={el.image}
               title={el.title}
-              href={el.href}
               step={step}
             />
           );

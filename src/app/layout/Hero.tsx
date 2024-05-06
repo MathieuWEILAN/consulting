@@ -1,13 +1,9 @@
 "use client";
 
 import * as React from "react";
-
 import maison from "../assets/img/home.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import ReactPlayer from "react-player/youtube";
-import Video from "../components/Video";
-import BlockLogo from "../components/blocks/BlockLogo";
 const Hero = ({
   title,
   image1,
@@ -28,7 +24,7 @@ const Hero = ({
   return (
     <section className="section-background">
       <motion.div className="absolute top-0 z-20">
-        <motion.div className="flex justify-center items-center h-[700px] w-screen flex-col z-20 space-y-10 relative">
+        <motion.div className="flex justify-center items-center h-[700px] w-screen max-w-[2000px] flex-col z-20 space-y-10 relative">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -55,6 +51,7 @@ const Hero = ({
         alt=""
         width={1200}
         height={700}
+        priority
         className="w-full h-[650px] lg:h-[700px] object-cover mx-auto"
       />
     </section>

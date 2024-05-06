@@ -2,6 +2,11 @@ import Hero from "../layout/Hero";
 import paris from "../assets/img/paris.jpg";
 import Image from "next/image";
 import france from "../assets/img/france.png";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mon Accompagnateur Rénov - Listes des départements | Audicée",
+};
 
 const ListeDesDepartementsPage = () => {
   return (

@@ -74,31 +74,35 @@ const BlockForm = () => {
           <h3>CONTACTEZ-NOUS</h3>
           <p>
             Prêt à prendre des mesures concrètes vers une entreprise plus
-            durable ? <br></br>
-            <br></br>Contactez nous dès aujourd&apos;hui pour en savoir plus sur
-            nos services d&apos;audit énergétique et découvrir comment Audicée
-            peut vous aider à atteindre vos objectifs en matière
-            d&apos;efficacité énergétique. Ensemble, construisons un avenir plus
-            durable et prospère.
+            durable ?{" "}
+          </p>
+          <p>
+            Contactez nous dès aujourd&apos;hui pour en savoir plus sur nos
+            services d&apos;audit énergétique et découvrir comment Audicée peut
+            vous aider à atteindre vos objectifs en matière d&apos;efficacité
+            énergétique. Ensemble, construisons un avenir plus durable et
+            prospère.
           </p>
         </div>
         <form
           action="submit"
-          className="flex flex-col space-y-5 p-5 lg:p-10 my-5 lg:my-10 border bg-white rounded-xl shadow-lg w-full lg:w-1/2 items-center"
+          className="flex flex-col space-y-5 p-5 lg:p-10 my-5 bg-stone-50 rounded-xl shadow-lg w-full lg:w-1/2 items-center"
         >
           <input
             type="text"
             placeholder="Nom"
-            name="name"
+            name="nom"
             className="w-full"
             onChange={handleInputChange}
+            aria-label="nom"
           />
           <input
             type="text"
-            name="first_name"
+            name="prenom"
             placeholder="Prénom"
             className="w-full"
             onChange={handleInputChange}
+            aria-label="prenom"
           />
           <input
             type="email"
@@ -106,6 +110,7 @@ const BlockForm = () => {
             placeholder="Email"
             className="w-full"
             onChange={handleInputChange}
+            aria-label="email"
           />
           <input
             type="objet"
@@ -113,13 +118,15 @@ const BlockForm = () => {
             placeholder="Objet"
             className="w-full"
             onChange={handleInputChange}
+            aria-label="objet"
           />
           <textarea
             placeholder="Message"
-            name="Message"
+            name="message"
             id="description"
             cols={30}
             rows={10}
+            aria-label="message"
             className="w-full rounded-xl px-4 py-2.5 border border-slate-300 focus:outline-none focus:border-slate-500"
           ></textarea>
 
