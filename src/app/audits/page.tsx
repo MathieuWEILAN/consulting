@@ -1,4 +1,4 @@
-import Audits from "./Audits";
+import Audits from "./audits";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

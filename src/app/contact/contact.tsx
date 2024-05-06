@@ -11,10 +11,10 @@ const Contact = () => {
         <p className="lg:px-20">
           Faites confiance à Audicée pour vous accompagner vers une rénovation
           énergétique réussie et bénéficiez des avantages de notre agrément Mon
-          Accompagnateur Rénov' et de l'aide financière de MaPrimeRénov.
-          Contactez-nous dès aujourd'hui pour en savoir plus sur nos services et
-          découvrir comment nous pouvons vous aider à concrétiser vos projets de
-          rénovation énergétique.
+          Accompagnateur Rénov&apos; et de l&apos;aide financière de
+          MaPrimeRénov. Contactez-nous dès aujourd&apos;hui pour en savoir plus
+          sur nos services et découvrir comment nous pouvons vous aider à
+          concrétiser vos projets de rénovation énergétique.
         </p>
         <div className="my-10 lg:px-20">
           {" "}
