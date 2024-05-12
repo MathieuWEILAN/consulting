@@ -97,41 +97,42 @@ const Header = () => {
             })}
           </ul>
         </nav>
-        <a
-          href="tel:0614904645"
-          className="hidden lg:flex space-x-2 items-center bg-stone-50 px-4 py-2 rounded text-slate-950 hover:bg-primaryGreen hover:text-white transition duration-300"
-        >
-          <PhoneIcon />
-          <span>06 14 90 46 45</span>
-        </a>
-
-        <button
-          className="w-14 h-14 shadow-lg rounded-full lg:hidden"
-          onClick={() => {
-            setIsMenuMobile(!isMenuMobile);
-          }}
-          role="button"
-          name="menu mobile"
-        >
-          <div
-            className={`inset-0 w-6 h-0.5 flex items-center justify-center bg-primaryGreen transition duration-400 m-auto rounded ${
-              isMenuMobile ? "rotate-45" : ""
-            }`}
-          ></div>
-          <div
-            className={`inset-0 w-6 h-0.5 flex items-center justify-center bg-primaryGreen transition duration-400 m-auto rounded ${
-              isMenuMobile ? " -rotate-45 !-mt-0.5" : "mt-1"
-            }`}
-          ></div>
-          <div
-            className={`inset-0 w-6 h-0.5 flex items-center justify-center bg-primaryGreen transition duration-400 m-auto rounded ${
-              isMenuMobile ? " -rotate-45 !-mt-0.5" : "mt-1"
-            }`}
-          ></div>
-        </button>
+        <div className="flex space-x-4">
+          <a
+            href="tel:0614904645"
+            className="w-14 h-14 lg:w-full lg:h-auto rounded-full shadow-xl lg:rounded-lg flex space-x-2 justify-center items-center bg-stone-50 lg:px-4 lg:py-2 text-slate-950 hover:bg-primaryGreen hover:text-white transition duration-300"
+          >
+            <PhoneIcon />
+            <span className="hidden lg:block">06 14 90 46 45</span>
+          </a>
+          <button
+            className="w-14 h-14 shadow-xl rounded-full lg:hidden"
+            onClick={() => {
+              setIsMenuMobile(!isMenuMobile);
+            }}
+            role="button"
+            name="menu mobile"
+          >
+            <div
+              className={`inset-0 w-6 h-0.5 flex items-center justify-center bg-primaryGreen transition duration-400 m-auto rounded ${
+                isMenuMobile ? "rotate-45" : ""
+              }`}
+            ></div>
+            <div
+              className={`inset-0 w-6 h-0.5 flex items-center justify-center bg-primaryGreen transition duration-400 m-auto rounded ${
+                isMenuMobile ? " -rotate-45 !-mt-0.5" : "mt-1"
+              }`}
+            ></div>
+            <div
+              className={`inset-0 w-6 h-0.5 flex items-center justify-center bg-primaryGreen transition duration-400 m-auto rounded ${
+                isMenuMobile ? " -rotate-45 !-mt-0.5" : "mt-1"
+              }`}
+            ></div>
+          </button>
+        </div>
 
         <nav
-          className={`lg:hidden w-screen h-screen right-0 top-[80px] absolute lg:hidden flex py-4 bg-slate-50 transform transition-transform duration-500 menu-mobile-bg ${
+          className={`lg:hidden w-screen h-auto shadow-lg right-0 top-[80px] absolute lg:hidden flex py-4 bg-slate-50 transform transition-transform duration-500 ${
             isMenuMobile ? "-translate-x-0" : "translate-x-full"
           }`}
         >

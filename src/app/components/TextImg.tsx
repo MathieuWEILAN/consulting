@@ -60,16 +60,16 @@ const TextImg = ({
   return (
     <section className="w-full h-full">
       <motion.div
-        className=" w-full flex flex-col lg:flex-row items-center justify-center mx-auto bg-slate-50"
+        className="w-full flex flex-col lg:flex-row items-center justify-center bg-slate-50"
         initial="offscreen"
         whileInView="onscreen"
-        viewport={{ once: true, amount: 0.6 }}
+        viewport={{ once: true, amount: 0.4 }}
       >
         <motion.div
           variants={upVariants}
           className={`${
             order === "right" ? "order-2" : "order-1"
-          } w-full lg:w-1/2 px-4 py-10 lg:p-20 text-xl flex flex-col items-end justify-center`}
+          } w-full lg:w-1/2 px-4 py-10  lg:p-10 xl:p-20 text-xl flex flex-col items-end justify-center`}
         >
           {title && <motion.h2 className="w-full">{title}</motion.h2>}
           <motion.p className="w-full text-xl">{text}</motion.p>
@@ -82,9 +82,9 @@ const TextImg = ({
         <Image
           src={img}
           width={1200}
-          height={700}
+          height={800}
           alt=""
-          className={`w-full lg:w-1/2 ${className} max-h-[700px] object-contain z-10 ${
+          className={`w-full lg:w-1/2 ${className} lg:h-[500px] xl:h-full lg:object-cover xl:object-contain object-center z-10 ${
             order === "right" ? "order-1" : "order-2"
           }`}
         />

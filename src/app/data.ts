@@ -5,7 +5,7 @@ import step4 from "./assets/img/step4.jpg";
 import step5 from "./assets/img/step5.jpg";
 import zizou from "./assets/img/zizou.jpeg";
 import photo2 from "./assets/img/photo2.jpg";
-import trees from "./assets/img/trees.jpg";
+import trees from "./assets/img/trees.webp";
 import { StaticImageData } from "next/dist/shared/lib/get-img-props";
 
 interface SubmenuItem {

@@ -58,7 +58,7 @@ export default function HomePage() {
         img={maison}
         className="bg-primaryGreen"
         order="right"
-        link="/nos-services"
+        link="/audits"
         textLink="Découvrez nos services"
       />
       {/* 

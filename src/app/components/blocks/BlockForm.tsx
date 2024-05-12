@@ -68,7 +68,7 @@ const BlockForm = () => {
   };
 
   return (
-    <section className="w-full h-auto bg-primaryBlue">
+    <section className="w-full h-auto bg-primaryBlue px-5">
       <div className="lg:container px-5 lg:px-0 mx-auto flex flex-col lg:flex-row items-center justify-between">
         <div className="w-full lg:w-1/2 p-5 lg:p-10 bg-stone-50 rounded-lg shadow-xl lg:mr-10 my-5 lg:my-0">
           <h3>CONTACTEZ-NOUS</h3>

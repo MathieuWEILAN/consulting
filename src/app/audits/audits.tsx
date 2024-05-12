@@ -83,26 +83,26 @@ const AuditsPage = () => {
 
       <section className="w-full h-full">
         <div className="mx-auto  flex flex-col lg:flex-row w-full justify-between px-0 overflow-hidden">
-          <div className="p-5 lg:p-20 flex flex-col justify-center">
+          <div className="p-5 lg:p-10 xl:p-20 flex flex-col justify-center">
             <h2>Avec Audicée :</h2>
             <ul>
-              <li className="text-lg lg:text-2xl my-2.5">
+              <li className="text-lg lg:text-xl my-2.5">
                 <strong className="text-primaryBlue">Réduisez</strong> vos
                 dépenses énergétique
               </li>
-              <li className="text-lg lg:text-2xl my-2.5">
+              <li className="text-lg lg:text-xl my-2.5">
                 <strong className="text-primaryBlue">Améliorez</strong> votre
                 confort
               </li>
-              <li className="text-lg lg:text-2xl my-2.5">
+              <li className="text-lg lg:text-xl my-2.5">
                 <strong className="text-primaryBlue">Augmentez</strong> la
                 valeur de votre bien
               </li>
-              <li className="text-lg lg:text-2xl my-2.5">
+              <li className="text-lg lg:text-xl my-2.5">
                 <strong className="text-primaryBlue">Profitez</strong> de
                 l&apos;expertise de nos professionnels
               </li>
-              <li className="text-lg lg:text-2xl my-2.5">
+              <li className="text-lg lg:text-xl my-2.5">
                 <strong className="text-primaryBlue">Préservez </strong>
                 l&apos;environnement
               </li>
@@ -111,7 +111,7 @@ const AuditsPage = () => {
           <Image
             src={family}
             alt=""
-            className="shadow-xl w-full lg:w-1/2 h-full"
+            className="w-full lg:w-1/2 h-auto object-cover object-center"
             width={700}
           ></Image>
         </div>

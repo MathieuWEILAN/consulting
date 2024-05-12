@@ -23,7 +23,7 @@ const CardPrestations = ({
         className={`h-full w-full object-cover bg-white object-center`}
       />
       <div
-        className={`bg-slate-50 w-full absolute bottom-0 group flex justify-start items-center p-4 flex-col h-48`}
+        className={`bg-slate-50 w-full absolute bottom-0 group flex justify-start items-center p-4 flex-col h-56`}
       >
         <h3 className="text-left w-full uppercase">{title}</h3>
         <span>{text}</span>

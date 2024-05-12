@@ -24,7 +24,7 @@ const Hero = ({
   return (
     <section className="section-background">
       <motion.div className="absolute top-0 z-20">
-        <motion.div className="flex justify-center items-center h-[700px] w-screen max-w-[2000px] flex-col z-20 space-y-10 relative">
+        <motion.div className="flex justify-center items-center h-[650px] w-screen max-w-[2000px] flex-col z-20 space-y-10 relative">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -40,7 +40,7 @@ const Hero = ({
               height={24}
               className="max-w-[200px] lg:max-w-[400px] max-h-[300px] object-contain mx-auto mb-10"
             />
-            <h1 className="text-white uppercase tracking-widest container mx-auto">
+            <h1 className="text-white uppercase tracking-widest text-center w-full block">
               {title ? title : "HOMEPAGE"}
             </h1>
           </motion.div>
