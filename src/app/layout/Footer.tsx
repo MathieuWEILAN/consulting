@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="container w-full mx-auto p-4 md:py-8">
         <div className="sm:flex items-start sm:justify-between">
           <a
-            href="https://flowbite.com/"
+            href="/"
             className="flex items-center mb-4 sm:mb-0 space-x-3 text-slate-950"
           >
             <Image
