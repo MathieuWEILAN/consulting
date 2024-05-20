@@ -1,9 +1,10 @@
 "use client";
 import BlockForm from "../components/blocks/BlockForm";
-import Image from "next/image";
 import BlockLogo from "../components/blocks/BlockLogo";
 import { menu } from "../data";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "../assets/img/logo-blue.png";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -17,9 +18,13 @@ const Footer = () => {
             href="https://flowbite.com/"
             className="flex items-center mb-4 sm:mb-0 space-x-3 text-slate-950"
           >
-            <span className="self-center text-2xl font-semibold whitespace-nowrap">
-              Audicée
-            </span>
+            <Image
+              src={logo}
+              alt="Vercel Logo"
+              width={200}
+              height={24}
+              className="object-contain mx-auto mb-10"
+            />
           </a>
           <div className="flex space-x-10 pb-8">
             <div>

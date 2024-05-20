@@ -11,6 +11,11 @@ const config: Config = {
       container: {
         padding: "1rem",
       },
+      backgroundImage: {
+        "gradient-to-b":
+          "linear-gradient(to bottom, rgba(37, 53, 111, 0.5) 0%, rgba(37, 53, 111, 1) 90%, rgba(37, 53, 111, 1) 100%)",
+      },
+
       colors: {
         primaryGreen: "#66C18C",
         primaryGreenBg: "rgba(102, 193, 140, 0.4)",

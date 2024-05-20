@@ -2,9 +2,6 @@
 import React from "react";
 import HeroVideo from "./layout/HeroVideo";
 import maison from "./assets/img/maison-projet.jpg";
-import { arrayCards } from "./data";
-import Image from "next/image";
-import Link from "next/link";
 import TextImg from "./components/TextImg";
 import engagement from "./assets/img/engagement.jpg";
 import Button from "./components/Button";
@@ -61,45 +58,6 @@ export default function HomePage() {
         link="/audits"
         textLink="Découvrez nos services"
       />
-      {/* 
-        <section className="container mx-auto lg:p-10 flex flex-col items-end">
-          <h2 className="text-center w-full">
-            Pourquoi se faire accompagner dans votre rénovation?
-          </h2>
-          <p className="lg:px-20 lg:pt-10">
-            La transition énergétique de votre maison n&apos;est pas seulement
-            une question de remplacement d&apos;équipements ou
-            d&apos;installation de nouvelles technologies.<br></br> Il
-            s&apos;agit d&apos;une démarche complète qui vise à optimiser votre
-            consommation énergétique, à réduire vos coûts et à améliorer votre
-            confort, tout en contribuant à la protection de notre environnement.
-            Voici pourquoi l&apos;accompagnement par un professionnel de
-            l&apos;audit énergétique est essentiel :
-          </p>
-          <div className="flex flex-wrap lg:flex-row flex-col lg:px-20 lg:py-10">
-            {homePageWhy.map((item, index) => {
-              return (
-                <div
-                  key={index}
-                  className="w-full lg:w-1/3 lg:px-10 my-4 lg:my-10"
-                >
-                  <h3>
-                    {index + 1}. {item.title}
-                  </h3>
-                  <p>{item.text}</p>
-                </div>
-              );
-            })}
-          </div>
-          <Block1 array={arrayCards} />
-
-          <Link
-            href="/nos-services"
-            className="w-fit text-lg hover:underline mt-2.5 lg:px-20 mb-5"
-          >
-            Découvrez nos services
-          </Link>
-        </section> */}
     </>
   );
 }

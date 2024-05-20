@@ -1,19 +1,15 @@
 "use client";
 
-import Image from "next/image";
-import Head from "next/head";
 import money from "../assets/img/money.jpg";
 import engagement from "../assets/img/engagement.jpg";
 import analyse from "../assets/img/analyse.jpg";
 import green from "../assets/img/green.jpg";
 import TextImage from "../components/TextImage";
 import Hero from "../layout/Hero";
+
 export default function MonAccompagneurRenov() {
   return (
     <>
-      <Head>
-        <title>Qui sommes-nous ?</title>
-      </Head>
       <Hero
         image2={analyse}
         title={

@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 import "./globals.css";
+import Head from "next/head";
 
 const roboto = Roboto({
   weight: ["400", "500", "700", "900"],
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     "audit énergétique, rénovation énergétique, efficacité énergétique, économies d'énergie, confort thermique, transition énergétique, audit, économies, mon accompagnateur rénov, ma prim renov, Île-de-France",
 
   openGraph: {
-    images: "/og-image.png",
+    images: "../assets/img/COULEUR_JPEG.jpg",
   },
 };
 
@@ -28,6 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="w-screen overflow-x-hidden">
+      <Head>
+        <link rel="icon" href="/audicee.ico" sizes="32*32" />
+      </Head>{" "}
       <body className={roboto.className}>
         <Header />
         <main>{children}</main>

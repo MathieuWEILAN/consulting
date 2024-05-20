@@ -5,6 +5,7 @@ import Image from "next/image";
 import Submenu from "./Submenu";
 import { menu } from "../data";
 import PhoneIcon from "../assets/svg/PhoneIcon";
+import logo from "../assets/img/logo-blue.png";
 
 interface DropdownState {
   isVisible: boolean;
@@ -56,14 +57,14 @@ const Header = () => {
     }
   };
 
-  const headerBgClass =
-    scrollY > 150
-      ? "lg:bg-slate-50 shadow-xl bg-stone-50 text-stone-950"
-      : "lg:bg-transparent bg-stone-50 lg:text-white";
-
+  const headerBgClass = scrollY > 150 ? true : false;
   return (
     <header
-      className={`${headerBgClass} flex w-full h-20 lg:h-14 z-50 fixed top-0 py-4 lg:py-0 px-2.5 text-lg max-w-[2000px]`}
+      className={`${
+        headerBgClass
+          ? "lg:bg-slate-50 shadow-xl bg-stone-50 text-stone-950"
+          : "lg:bg-transparent bg-stone-50 lg:text-white"
+      } flex w-full h-20 lg:h-14 z-50 fixed top-0 py-4 lg:py-0 px-2.5 text-lg max-w-[2000px]`}
     >
       <div className="lg:container mx-auto flex items-center justify-between w-full px-4 lg:px-0">
         <a
@@ -72,7 +73,7 @@ const Header = () => {
           onMouseEnter={handleClick}
           onMouseLeave={handleLeave}
         >
-          <Image src="/vercel.svg" alt="Vercel Logo" width={100} height={24} />
+          <Image src={logo} alt="Logo Audicée" width={100} height={100} />
         </a>
         <nav className="h-full flex items-center w-fit hidden lg:block">
           <ul className="flex items-center w-full h-full">
@@ -80,13 +81,21 @@ const Header = () => {
               return (
                 <li
                   key={i}
-                  className="h-[105%] flex items-center relative group hover:text-green-600 transition duration-300 px-4 mx-2.5"
+                  className={`h-[105%] flex items-center relative group ${
+                    headerBgClass
+                      ? "hover:text-green-600"
+                      : "hover:text-stone-50"
+                  } transition duration-300 px-4 mx-2.5`}
                   onMouseEnter={() => handleMouseEnter(el.titleName)}
                   onMouseLeave={handleMouseLeave}
                 >
                   <a className="cursor-pointer" href={el.titleHref}>
                     {el.titleName}{" "}
-                    <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-primaryGreen"></span>
+                    <span
+                      className={`block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 ${
+                        headerBgClass ? "bg-green-600" : "bg-stone-50"
+                      }  `}
+                    ></span>
                   </a>
                   {isDropdownVisible.isVisible &&
                     isDropdownVisible.type === el.titleName && (

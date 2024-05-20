@@ -8,10 +8,12 @@ const Hero = ({
   title,
   image1,
   image2,
+  children,
 }: {
   title?: string;
   image1?: any;
   image2?: any;
+  children?: any;
 }) => {
   const [isHomepage, setIsHomepage] = React.useState(false);
   React.useEffect(() => {
@@ -33,16 +35,19 @@ const Hero = ({
               delay: 0.5,
             }}
           >
-            <Image
-              src={image1 ? image1 : "/vercel.svg"}
-              alt="Vercel Logo"
-              width={400}
-              height={24}
-              className="max-w-[200px] lg:max-w-[400px] max-h-[300px] object-contain mx-auto mb-10"
-            />
+            {image1 && (
+              <Image
+                src={image1}
+                alt=""
+                width={400}
+                height={24}
+                className="max-w-[200px] lg:max-w-[400px] max-h-[300px] object-contain mx-auto mb-10"
+              />
+            )}
             <h1 className="text-white uppercase tracking-widest text-center w-full block">
               {title ? title : "HOMEPAGE"}
             </h1>
+            {children && { children }}
           </motion.div>
         </motion.div>
       </motion.div>
