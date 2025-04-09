@@ -108,11 +108,11 @@ const Header = () => {
         </nav>
         <div className="flex space-x-4">
           <a
-            href="tel:0614904645"
+            href="tel:0186223185"
             className="w-14 h-14 lg:w-full lg:h-auto rounded-full shadow-xl lg:rounded-lg flex space-x-2 justify-center items-center bg-stone-50 lg:px-4 lg:py-2 text-slate-950 hover:bg-primaryGreen hover:text-white transition duration-300"
           >
             <PhoneIcon />
-            <span className="hidden lg:block">06 14 90 46 45</span>
+            <span className="hidden lg:block">01 86 22 31 85</span>
           </a>
           <button
             className="w-14 h-14 shadow-xl rounded-full lg:hidden"
