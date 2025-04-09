@@ -17,16 +17,19 @@ const Hero = ({ title, image1 }: { title?: string; image1?: any }) => {
               duration: 0.5,
               delay: 0.5,
             }}
+            className="flex flex-col items-center pb-20"
           >
             <Image
               src={image1 ? image1 : logo}
               alt="Vercel Logo"
               width={700}
               height={400}
-              className="max-w-[200px] sm:max-w-[800px] max-h-[400px] object-contain mx-auto mb-60"
+              className="max-w-[200px] sm:max-w-[800px] max-h-[400px] object-contain mx-auto"
             />
-            <h1 className="text-white uppercase tracking-widest w-auto mt-24 absolute top-1/2 translate-x-1/2 lg:translate-x-0 flex flex-col items-center">
-              <span className="text-white text-[70px]">Audicée</span>
+            <h1 className="text-white uppercase tracking-widest flex flex-col items-center">
+              <span className="text-white text-[50px] lg:text-[70px]">
+                Audicée
+              </span>
               <br />
               {title}
             </h1>

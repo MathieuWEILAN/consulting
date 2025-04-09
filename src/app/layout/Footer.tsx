@@ -69,8 +69,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr className="border-gray-200 sm:mx-auto  lg:my-4" />
-        <span className="flex text-sm text-slate-950 sm:text-center justify-center">
+        <span className="flex text-sm text-slate-950 sm:text-center justify-center border-t border-slate-200 pt-4 lg:pt-8">
           © {year} &nbsp;
           <Link href="/" className="hover:underline">
             Audicée

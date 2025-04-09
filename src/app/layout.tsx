@@ -28,11 +28,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="w-screen overflow-x-hidden">
+    <html lang="en" className="w-screen">
       <Head>
         <link rel="icon" href="/audicee.ico" sizes="32*32" />
       </Head>{" "}
-      <body className={roboto.className}>
+      <body className={`${roboto.className} overflow-x-hidden !w-screen`}>
         <Header />
         <main>{children}</main>
         <Footer />
