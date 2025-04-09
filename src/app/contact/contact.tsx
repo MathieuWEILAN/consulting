@@ -26,10 +26,10 @@ const Contact = () => {
           </a>
           <p className="underline">Email : </p>
           <a
-            href="mailto:contact@audicee.fr"
+            href="mailto:auditenergie77@gmail.com"
             className="hover:underline transition-colors"
           >
-            <span>contact@audicee.fr</span>
+            <span>auditenergie77@gmail.com</span>
           </a>
           <p className="underline">Adresse : </p>
           <a

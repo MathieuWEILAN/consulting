@@ -47,10 +47,10 @@ const Footer = () => {
             <div className="flex flex-col">
               <h3>Contact</h3>
               <a
-                href="emailto:contact@audicee.fr"
+                href="emailto:auditenergie77@gmail.com"
                 className="hover:underline cursor-pointer"
               >
-                contact@audicee.fr
+                auditenergie77@gmail.com
               </a>
               <a
                 href="tel:0186223185"
