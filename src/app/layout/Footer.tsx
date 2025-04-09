@@ -4,7 +4,7 @@ import BlockLogo from "../components/blocks/BlockLogo";
 import { menu } from "../data";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../assets/img/logo-blue.png";
+import logo from "../assets/img/audicee-logo-titre.png";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -47,12 +47,25 @@ const Footer = () => {
             <div className="flex flex-col">
               <h3>Contact</h3>
               <a
-                href="emailto:contact@audicée.fr"
+                href="emailto:contact@audicee.fr"
                 className="hover:underline cursor-pointer"
               >
-                contact@audicée.fr
+                contact@audicee.fr
               </a>
-              <span>06 14 90 46 45</span>
+              <a
+                href="tel:0186223185"
+                className="hover:underline cursor-pointer"
+              >
+                01 86 22 31 85
+              </a>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=7+avenue+Christian+Doppier+77600+Serris"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline transition-colors"
+              >
+                <span>7 avenue Christian Doppier, 77600 Serris</span>
+              </a>
             </div>
           </div>
         </div>

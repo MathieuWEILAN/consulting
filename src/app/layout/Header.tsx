@@ -5,7 +5,7 @@ import Image from "next/image";
 import Submenu from "./Submenu";
 import { menu } from "../data";
 import PhoneIcon from "../assets/svg/PhoneIcon";
-import logo from "../assets/img/logo-blue.png";
+import logo from "../assets/img/audicee-logo-titre.png";
 
 interface DropdownState {
   isVisible: boolean;
@@ -64,7 +64,7 @@ const Header = () => {
         headerBgClass
           ? "lg:bg-slate-50 shadow-xl bg-stone-50 text-stone-950"
           : "lg:bg-transparent bg-stone-50 lg:text-white"
-      } flex w-full h-20 lg:h-14 z-50 fixed top-0 py-4 lg:py-0 px-2.5 text-lg max-w-[2000px]`}
+      } flex w-full h-20 z-50 fixed top-0 py-8 lg:py-0 px-2.5 text-lg`}
     >
       <div className="lg:container mx-auto flex items-center justify-between w-full px-4 lg:px-0">
         <a
@@ -73,7 +73,7 @@ const Header = () => {
           onMouseEnter={handleClick}
           onMouseLeave={handleLeave}
         >
-          <Image src={logo} alt="Logo Audicée" width={100} height={100} />
+          <Image src={logo} alt="Logo Audicée" width={70} height={70} />
         </a>
         <nav className="h-full flex items-center w-fit hidden lg:block">
           <ul className="flex items-center w-full h-full">

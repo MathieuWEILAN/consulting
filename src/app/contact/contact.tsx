@@ -17,11 +17,29 @@ const Contact = () => {
           concrétiser vos projets de rénovation énergétique.
         </p>
         <div className="my-10 lg:px-20">
-          {" "}
           <p className="underline">Téléphone : </p>
-          <span>01 02 04 04 06</span>
+          <a
+            href="tel:0186223185"
+            className="hover:underline transition-colors"
+          >
+            <span>01 86 22 31 85</span>
+          </a>
           <p className="underline">Email : </p>
-          <a href="mailto:contact@audicee.fr">contact@audicee.fr</a>
+          <a
+            href="mailto:contact@audicee.fr"
+            className="hover:underline transition-colors"
+          >
+            <span>contact@audicee.fr</span>
+          </a>
+          <p className="underline">Adresse : </p>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=7+avenue+Christian+Doppier+77600+Serris"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline transition-colors"
+          >
+            <span>7 avenue Christian Doppier, 77600 Serris</span>
+          </a>
         </div>
       </section>
     </>

@@ -4,7 +4,7 @@ import * as React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Video from "../components/Video";
-import logo from "../assets/img/logo-white.png";
+import logo from "../assets/img/audicee-logo-sans-texte.png";
 const Hero = ({ title, image1 }: { title?: string; image1?: any }) => {
   return (
     <section className="section-background">
@@ -23,9 +23,11 @@ const Hero = ({ title, image1 }: { title?: string; image1?: any }) => {
               alt="Vercel Logo"
               width={700}
               height={400}
-              className="max-w-[200px] sm:max-w-[800px] max-h-[500px] object-contain mx-auto mb-40"
+              className="max-w-[200px] sm:max-w-[800px] max-h-[400px] object-contain mx-auto mb-60"
             />
-            <h1 className="text-white uppercase tracking-widest w-auto mt-10 absolute top-1/2 translate-x-1/2 lg:translate-x-0">
+            <h1 className="text-white uppercase tracking-widest w-auto mt-24 absolute top-1/2 translate-x-1/2 lg:translate-x-0 flex flex-col items-center">
+              <span className="text-white text-[70px]">Audicée</span>
+              <br />
               {title}
             </h1>
           </motion.div>

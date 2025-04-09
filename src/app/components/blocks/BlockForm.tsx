@@ -69,22 +69,21 @@ const BlockForm = () => {
 
   return (
     <section className="w-full h-auto bg-primaryBlue px-5">
-      <div className="lg:container lg:px-5 mx-auto flex flex-col lg:flex-row items-center justify-between">
-        <div className="w-full lg:w-1/2 p-5 lg:p-10 bg-stone-50 rounded-lg shadow-xl lg:mr-10 my-5 lg:my-0">
-          <h3>CONTACTEZ-NOUS</h3>
-          <p>
-            Prêt à prendre des mesures concrètes vers une entreprise plus
-            durable ?{" "}
-          </p>
-          <p>
-            Contactez nous dès aujourd&apos;hui pour en savoir plus sur nos
-            services d&apos;audit énergétique et découvrir comment Audicée peut
-            vous aider à atteindre vos objectifs en matière d&apos;efficacité
-            énergétique. Ensemble, construisons un avenir plus durable et
-            prospère.
-          </p>
-        </div>
-        <form
+      <div className="text-white lg:container lg:px-5 mx-auto flex flex-col justify-between py-20">
+        <h3 className="text-2xl font-bold">CONTACTEZ-NOUS</h3>
+        <p>
+          Prêt à prendre des mesures concrètes vers une entreprise plus durable
+          ?{" "}
+        </p>
+        <p>
+          Contactez nous dès aujourd&apos;hui pour en savoir plus sur nos
+          services d&apos;audit énergétique et découvrir comment Audicée peut
+          vous aider à atteindre vos objectifs en matière d&apos;efficacité
+          énergétique. Ensemble, construisons un avenir plus durable et
+          prospère.
+        </p>
+
+        {/* <form
           action="submit"
           className="flex flex-col space-y-5 p-5 lg:p-10 my-5 bg-stone-50 rounded-xl shadow-lg w-full lg:w-1/2 items-center"
         >
@@ -135,7 +134,7 @@ const BlockForm = () => {
             type={"submit"}
             action={() => console.log(state)}
           />
-        </form>
+        </form> */}
       </div>
     </section>
   );
