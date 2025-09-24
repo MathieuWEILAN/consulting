@@ -5,6 +5,7 @@ import { menu } from "../data";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../assets/img/audicee-logo-titre.png";
+import LogoIcon from "../assets/svg/LogoIcon";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -13,20 +14,14 @@ const Footer = () => {
       <BlockLogo className="pt-4" />
       <BlockForm />
       <div className="container w-full mx-auto p-4 md:py-8">
-        <div className="sm:flex items-start sm:justify-between">
+        <div className="sm:flex items-start justify-center lg:justify-between">
           <a
             href="/"
-            className="flex items-center mb-4 sm:mb-0 space-x-3 text-slate-950"
+            className="mb-4 text-slate-950 w-auto flex justify-center lg:block"
           >
-            <Image
-              src={logo}
-              alt="Vercel Logo"
-              width={200}
-              height={24}
-              className="object-contain mx-auto mb-10"
-            />
+            <LogoIcon fill="#000" className="-mt-5 lg:-mt-0 w-auto h-40" />
           </a>
-          <div className="flex space-x-10 pb-8">
+          <div className="flex flex-col lg:flex-row  space-y-10 lg:space-y-0 lg:space-x-10 pb-8">
             <div>
               <h3>Navigation</h3>
               <ul>
@@ -44,7 +39,7 @@ const Footer = () => {
                 })}
               </ul>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col flex-1">
               <h3>Contact</h3>
               <a
                 href="emailto:auditenergie77@gmail.com"

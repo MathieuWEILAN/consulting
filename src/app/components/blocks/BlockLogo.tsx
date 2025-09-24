@@ -22,31 +22,31 @@ const BlockLogo = ({ className }: { className?: string }) => {
           src={monAccompagnateurRenov}
           width={100}
           alt=""
-          className="w-16 lg:w-auto max-h-20 object-contain bg-white rounded-lg mx-auto"
+          className="w-auto lg:w-auto h-10 lg:h-20 object-contain bg-white rounded-lg mx-auto"
         />
         <Image
           src={maPrimRenov}
           width={100}
           alt=""
-          className="w-16 lg:w-auto max-h-20 object-contain bg-white p-2.5 rounded-lg mx-auto"
+          className="w-auto lg:w-auto h-10 lg:h-20 object-contain bg-white p-2.5 rounded-lg mx-auto"
         />{" "}
         <Image
           src={opqibi}
           width={100}
           alt=""
-          className="w-16 lg:w-auto max-h-20 object-contain rounded-lg mx-auto"
+          className="w-auto lg:w-auto h-10 lg:h-20 object-contain rounded-lg mx-auto"
         />{" "}
         <Image
           src={rge}
           width={100}
           alt=""
-          className="w-16 lg:w-full max-h-20 object-contain mx-auto"
+          className="w-auto lg:w-full h-10 lg:h-20 object-contain mx-auto"
         />{" "}
         <Image
           src={anah}
           width={100}
           alt=""
-          className="w-16 lg:w-auto max-h-20 object-contain bg-white p-2.5 rounded-lg mx-auto"
+          className="w-auto lg:w-auto h-10 lg:h-20 object-contain bg-white p-2.5 rounded-lg mx-auto"
         />
       </motion.div>
     </section>

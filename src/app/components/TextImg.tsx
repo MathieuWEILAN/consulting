@@ -14,14 +14,16 @@ const TextImg = ({
   textLink,
   link,
   order,
+  children,
 }: {
-  text: string;
+  text?: string;
   img: StaticImageData;
   className?: string;
   title?: string;
   textLink?: string;
   link?: string;
   order?: string;
+  children?: any;
 }) => {
   const [isMobile, setIsMobile] = React.useState(false);
 
@@ -71,11 +73,11 @@ const TextImg = ({
             order === "right" ? "order-2" : "order-1"
           } w-full lg:w-1/2 px-4 py-10  lg:p-10 xl:p-20 text-xl flex flex-col items-end justify-center`}
         >
-          {title && <motion.h2 className="w-full">{title}</motion.h2>}
-          <motion.p className="w-full text-xl">{text}</motion.p>
+          {children}{" "}
           {link && (
-            <Link href={link} className="w-fit hover:underline mt-10">
+            <Link href={link} className="w-fit mt-10 relative group">
               {textLink}
+              <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-black" />
             </Link>
           )}
         </motion.div>

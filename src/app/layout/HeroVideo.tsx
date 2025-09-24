@@ -5,6 +5,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Video from "../components/Video";
 import logo from "../assets/img/audicee-logo-sans-texte.png";
+
+import LogoIcon from "../assets/svg/LogoIcon";
 const Hero = ({ title, image1 }: { title?: string; image1?: any }) => {
   return (
     <section className="section-background">
@@ -17,22 +19,9 @@ const Hero = ({ title, image1 }: { title?: string; image1?: any }) => {
               duration: 0.5,
               delay: 0.5,
             }}
-            className="flex flex-col items-center pb-20"
+            className="flex flex-col items-center lg:pb-10"
           >
-            <Image
-              src={image1 ? image1 : logo}
-              alt="Vercel Logo"
-              width={700}
-              height={400}
-              className="max-w-[200px] sm:max-w-[800px] max-h-[400px] object-contain mx-auto"
-            />
-            <h1 className="text-white uppercase tracking-widest flex flex-col items-center">
-              <span className="text-white text-[50px] lg:text-[70px]">
-                Audicée
-              </span>
-              <br />
-              {title}
-            </h1>
+            <LogoIcon fill="#fff" width="100%" />
           </motion.div>
         </motion.div>
       </motion.div>

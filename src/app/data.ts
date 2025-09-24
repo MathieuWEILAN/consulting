@@ -3,7 +3,6 @@ import step2 from "./assets/img/step2.jpg";
 import step3 from "./assets/img/step3.jpg";
 import step4 from "./assets/img/step4.jpg";
 import step5 from "./assets/img/step5.jpg";
-import zizou from "./assets/img/zizou.jpeg";
 import photo2 from "./assets/img/photo2.jpg";
 import trees from "./assets/img/trees.webp";
 import { StaticImageData } from "next/dist/shared/lib/get-img-props";
@@ -146,7 +145,7 @@ export const commentsCards: CommentsCardType[] = [
       "Nous vous assistons dans le devis et l'installation de panneaux solaires",
     firstName: "Mathieu",
     lastName: "WEILAN",
-    photo: zizou,
+    photo: trees,
     stars: 5,
   },
   {
@@ -154,7 +153,7 @@ export const commentsCards: CommentsCardType[] = [
       "Nous vous assistons dans le devis et l'installation de panneaux solaires",
     firstName: "lele",
     lastName: "MAMA",
-    photo: zizou,
+    photo: trees,
     stars: 5,
   },
   {
@@ -162,7 +161,7 @@ export const commentsCards: CommentsCardType[] = [
       "Nous vous assistons dans le devis et l'installation de pompe à chaleur afin de  chauffer écologiquement votre habitat.",
     firstName: "lalal",
     lastName: "lele",
-    photo: zizou,
+    photo: trees,
     stars: 5,
   },
   {
@@ -170,7 +169,7 @@ export const commentsCards: CommentsCardType[] = [
       "Nous vous assistons dans le devis et l'installation de pompe à chaleur afin de  chauffer écologiquement votre habitat.",
     firstName: "lalal",
     lastName: "lele",
-    photo: zizou,
+    photo: trees,
     stars: 5,
   },
   {
@@ -178,7 +177,7 @@ export const commentsCards: CommentsCardType[] = [
       "Nous vous assistons dans le devis et l'installation de pompe à chaleur afin de  chauffer écologiquement votre habitat.",
     firstName: "lalal",
     lastName: "lele",
-    photo: zizou,
+    photo: trees,
     stars: 5,
   },
   {
@@ -186,7 +185,7 @@ export const commentsCards: CommentsCardType[] = [
       "Nous vous assistons dans le devis et l'installation de pompe à chaleur afin de  chauffer écologiquement votre habitat.",
     firstName: "lalal",
     lastName: "lele",
-    photo: zizou,
+    photo: trees,
     stars: 5,
   },
 ];

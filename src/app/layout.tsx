@@ -11,7 +11,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Audit et Rénovation Énergétique | Audicée",
+  title: "Audicée | Audit et Rénovation Énergétique ",
   description:
     "Découvrez nos services experts en audit et rénovation énergétique pour optimiser votre consommation et améliorer le confort de votre domicile. Professionnels certifiés en Île-de-France.",
   keywords:
