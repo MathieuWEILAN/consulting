@@ -38,7 +38,7 @@ const Header = () => {
           headerBgClass
             ? "lg:bg-slate-50 shadow-xl text-stone-950"
             : "lg:bg-transparent lg:text-white"
-        } flex w-full h-20 z-50 fixed top-0 py-8 lg:py-0 pr-2.5 lg:px-2.5 text-lg bg-stone-50`}
+        } flex w-screen h-20 z-50 fixed top-0 py-8 lg:py-0 pr-2.5 lg:px-2.5 text-lg bg-stone-50`}
       >
         <div className="lg:container mx-auto flex items-center justify-between w-full pr-4 lg:px-4 lg:px-0">
           <a href="/">
@@ -128,7 +128,7 @@ const Header = () => {
           isMenuMobile ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <ul className="flex flex-col w-full h-full py-4">
+        <ul className="flex flex-col w-full h-full">
           {menu.map((el, i) => (
             <li
               key={i}

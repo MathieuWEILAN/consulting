@@ -14,7 +14,7 @@ const Footer = () => {
       <BlockLogo className="pt-4" />
       <BlockForm />
       <div className="container w-full mx-auto p-4 md:py-8">
-        <div className="sm:flex items-start justify-center lg:justify-between">
+        <div className="sm:flex items-start  sm:justify-between">
           <a
             href="/"
             className="mb-4 text-slate-950 w-auto flex justify-center lg:block"
