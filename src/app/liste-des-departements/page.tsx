@@ -3,15 +3,29 @@ import paris from "../assets/img/paris.jpg";
 import Image from "next/image";
 import france from "../assets/img/france.png";
 import { Metadata } from "next";
+import StructuredData from "../components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Mon Accompagnateur Rénov - Listes des départements | Audicée",
+  title: "Zones d'Intervention Île-de-France | Audit Énergétique par Département",
+  description: "Découvrez nos zones d'intervention en Île-de-France : Paris (75), Seine-et-Marne (77), Yvelines (78), Essonne (91), Hauts-de-Seine (92), Seine-Saint-Denis (93), Val-de-Marne (94), Val-d'Oise (95). Services d'audit énergétique professionnel.",
+  keywords: "audit énergétique Paris, rénovation énergétique Seine-et-Marne, Ma Prime Rénov Yvelines, efficacité énergétique Essonne, diagnostic énergétique Hauts-de-Seine, accompagnateur rénov Seine-Saint-Denis, audit énergétique Val-de-Marne, rénovation énergétique Val-d'Oise",
+  openGraph: {
+    title: "Zones d'Intervention Île-de-France | Audit Énergétique Audicée",
+    description: "Services d'audit et rénovation énergétique dans tous les départements d'Île-de-France. Experts certifiés Ma Prime Rénov.",
+  }
 };
 
 const ListeDesDepartementsPage = () => {
   return (
     <>
-      <Hero image2={paris} title="Liste des départements" />
+      <StructuredData
+        type="service"
+        data={{
+          name: "Services d'audit énergétique en Île-de-France",
+          description: "Services professionnels d'audit et rénovation énergétique dans tous les départements d'Île-de-France : Paris, Seine-et-Marne, Yvelines, Essonne, Hauts-de-Seine, Seine-Saint-Denis, Val-de-Marne, Val-d'Oise"
+        }}
+      />
+      <Hero image2={paris} title="Zones d'Intervention en Île-de-France" />
       <section className="flex flex-col items-center">
         <div className="container mx-auto p-5 lg:p-20">
           <h2>Nos Zones d&apos;Intervention en France</h2>

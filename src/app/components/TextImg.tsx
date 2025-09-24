@@ -86,6 +86,8 @@ const TextImg = ({
           width={1200}
           height={800}
           alt=""
+          loading="lazy"
+          placeholder="blur"
           className={`w-full lg:w-1/2 ${className} lg:h-[500px] xl:h-full lg:object-cover xl:object-contain object-center z-10 ${
             order === "right" ? "order-1" : "order-2"
           }`}
