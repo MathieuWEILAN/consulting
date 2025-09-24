@@ -24,6 +24,7 @@ export default function HomePage() {
           Nous sommes dévoués à aider les ménages à naviguer vers un avenir plus
           durable en maximisant leur efficacité énergétique et en réduisant leur
           impact environnemental.
+          <br />
           <br /> Notre passion pour l&apos;innovation, combinée à notre
           engagement envers l&apos;environnement, guide chacune de nos
           interventions.
@@ -40,9 +41,9 @@ export default function HomePage() {
         <motion.p className="w-full text-xl">
           Notre mission est de fournir des solutions d&apos;audit énergétique de
           pointe, personnalisées pour répondre aux besoins uniques de chaque
-          ménage. Nous nous engageons à apporter des changements concrets et
-          mesurables qui contribuent à la préservation de notre planète tout en
-          améliorant la rentabilité de nos clients.
+          ménage. <br /> <br /> Nous nous engageons à apporter des changements
+          concrets et mesurables qui contribuent à la préservation de notre
+          planète tout en améliorant la rentabilité de nos clients.
         </motion.p>
       </TextImg>
       <TextImg img={analyse} className="bg-primaryGreen">
@@ -51,10 +52,10 @@ export default function HomePage() {
           Chez Audicée, nous croyons en une approche holistique de
           l&apos;efficacité énergétique. Nous commençons par une analyse
           approfondie de vos opérations pour identifier les opportunités
-          d&apos;amélioration. Ensuite, nous collaborons avec vous pour
-          développer des solutions sur mesure qui maximiseront votre efficacité
-          énergétique tout en respectant votre budget et vos objectifs
-          commerciaux.
+          d&apos;amélioration. <br /> <br /> Ensuite, nous collaborons avec vous
+          pour développer des solutions sur mesure qui maximiseront votre
+          efficacité énergétique tout en respectant votre budget et vos
+          objectifs commerciaux.
         </motion.p>
       </TextImg>
       <TextImg
@@ -68,8 +69,8 @@ export default function HomePage() {
         <motion.p className="w-full text-xl">
           Nos services d&apos;audit énergétique couvrent tous les aspects de
           votre consommation d&apos;énergie, de l&apos;analyse de vos factures à
-          l&apos;inspection de vos équipements. Nous identifions les
-          inefficacités, proposons des solutions pratiques et durables, et
+          l&apos;inspection de vos équipements. <br /> <br /> Nous identifions
+          les inefficacités, proposons des solutions pratiques et durables, et
           suivons les performances pour garantir des résultats optimaux à long
           terme.
         </motion.p>

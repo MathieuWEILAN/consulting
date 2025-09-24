@@ -69,7 +69,7 @@ const BlockForm = () => {
 
   return (
     <section className="w-full h-auto bg-primaryBlue px-5">
-      <div className="text-white lg:container lg:px-5 mx-auto flex flex-col justify-between py-20">
+      <div className="text-white lg:container lg:px-5 mx-auto flex flex-col justify-between pt-10 pb-20">
         <h3 className="text-2xl font-bold">CONTACTEZ-NOUS</h3>
         <p>
           Prêt à prendre des mesures concrètes vers une entreprise plus durable

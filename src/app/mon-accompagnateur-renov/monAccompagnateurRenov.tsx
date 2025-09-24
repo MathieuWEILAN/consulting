@@ -13,6 +13,7 @@ import Link from "next/link";
 import renov from "../assets/img/renov.webp";
 import france from "../assets/img/france.png";
 import mains from "../assets/img/mains.jpg";
+import { motion } from "framer-motion";
 
 export default function MonAccompagneurRenov() {
   return (
@@ -24,47 +25,61 @@ export default function MonAccompagneurRenov() {
           title="Mon Accompagnateur Renov"
         />
       </section>
+      <TextImg img={renov}>
+        <motion.h2 className="w-full">
+          AUDICÉE est agréé Mon accompagnateur Rénov
+        </motion.h2>
+        <motion.p className="w-full text-xl">
+          Chez Audicée, nous sommes fiers d&apos;être agréés Mon Accompagnateur
+          Rénov&apos; par l&apos;ANAH et partenaires de MaPrimeRénov, deux
+          labels de qualité et de confiance dans le domaine de la rénovation
+          énergétique. <br /> <br /> Ces agréments témoignent de notre
+          engagement envers l&apos;excellence et notre capacité à fournir des
+          services d&apos;audit énergétique et de rénovation de premier ordre à
+          nos clients.
+        </motion.p>
+      </TextImg>
       <TextImg
-        title={"AUDICÉE est agréé Mon accompagnateur Rénov"}
-        text={
-          "Chez Audicée, nous sommes fiers d'être agréés Mon Accompagnateur Rénov' par l'ANAH et partenaires de MaPrimeRénov, deux labels de qualité et de confiance dans le domaine de la rénovation énergétique. Ces agréments témoignent de notre engagement envers l'excellence et notre capacité à fournir des services d'audit énergétique et de rénovation de premier ordre à nos clients."
-        }
-        img={renov}
-      />
-      <TextImg
-        title="Qu'est-ce que Mon Accompagnateur Rénov' et MaPrimeRénov ?"
-        text="Mon
-        Accompagnateur Rénov' est un programme soutenu par l'ANAH qui
-        certifie les entreprises et les professionnels de la rénovation
-        énergétique, garantissant leur expertise et leur sérieux dans ce
-        domaine. MaPrimeRénov est une aide financière de l'État destinée à
-        soutenir les travaux de rénovation énergétique des logements."
         img={anah}
         className={"p-10 bg-white h-full w-full"}
         order="right"
-      />
+      >
+        <motion.h2 className="w-full">
+          Qu&apos;est-ce que Mon Accompagnateur Rénov&apos; et MaPrimeRénov ?
+        </motion.h2>
+        <motion.p className="w-full text-xl">
+          Mon Accompagnateur Rénov&apos; est un programme soutenu par
+          l&apos;ANAH qui certifie les entreprises et les professionnels de la
+          rénovation énergétique, garantissant leur expertise et leur sérieux
+          dans ce domaine.
+          <br /> <br /> MaPrimeRénov est une aide financière de l&apos;Etat
+          destinée à soutenir les travaux de rénovation énergétique des
+          logements.
+        </motion.p>
+      </TextImg>
 
-      <TextImg
-        title="Ce que cela signifie pour vous"
-        text="En choisissant Audicée pour vos besoins en rénovation énergétique,
-          vous avez l'assurance de travailler avec une équipe qualifiée et
+      <TextImg img={money}>
+        <motion.h2 className="w-full">Ce que cela signifie pour vous</motion.h2>
+        <motion.p className="w-full text-xl">
+          En choisissant Audicée pour vos besoins en rénovation énergétique,
+          vous avez l&apos;assurance de travailler avec une équipe qualifiée et
           compétente, capable de vous accompagner dans toutes les étapes de
-          votre projet, de l'audit initial à la réalisation des travaux, tout
-          en bénéficiant des aides financières disponibles grâce à
-          MaPrimeRénov."
-        img={money}
-      />
-      <TextImg
-        title="Notre Engagement Continu"
-        text="En tant que partenaire agréé Mon Accompagnateur Rénov', nous nous
-            engageons à maintenir notre excellence en matière de services de
-            rénovation énergétique. Nous continuons à nous former et à nous
-            tenir informés des dernières innovations et meilleures pratiques de
-            l'industrie pour mieux servir nos clients et contribuer à un habitat
-            plus écologique et durable."
-        img={mains}
-        order={"right"}
-      />
+          votre projet, de l&apos;audit initial à la réalisation des travaux,
+          tout en bénéficiant des aides financières disponibles grâce à
+          MaPrimeRénov.
+        </motion.p>
+      </TextImg>
+      <TextImg img={mains} order={"right"}>
+        <motion.h2 className="w-full">Notre Engagement Continu</motion.h2>
+        <motion.p className="w-full text-xl">
+          En tant que partenaire agréé Mon Accompagnateur Rénov&apos;, nous nous
+          engageons à maintenir notre excellence en matière de services de
+          rénovation énergétique. <br /> <br /> Nous continuons à nous former et
+          à nous tenir informés des dernières innovations et meilleures
+          pratiques de l&apos;industrie pour mieux servir nos clients et
+          contribuer à un habitat plus écologique et durable.
+        </motion.p>
+      </TextImg>
       <Block1 array={arrayCards} />
       <section className="bg-primaryGreen">
         <div className="container mx-auto flex flex-col lg:flex-row py-10">

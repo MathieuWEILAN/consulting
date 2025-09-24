@@ -27,13 +27,14 @@ const Footer = () => {
               <ul>
                 {menu.map((el, i) => {
                   return (
-                    <li key={i} className="">
-                      <a
-                        className="cursor-pointer hover:underline"
+                    <li key={i} className="w-fit">
+                      <Link
+                        className="cursor-pointer relative group w-fit"
                         href={el.titleHref}
                       >
-                        {el.titleName}{" "}
-                      </a>
+                        {el.titleName}
+                        <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-black" />
+                      </Link>
                     </li>
                   );
                 })}

@@ -14,20 +14,23 @@ import Image from "next/image";
 import family from "../assets/img/family.jpg";
 import TextImg from "../components/TextImg";
 import travaux from "../assets/img/travaux-renovation-globale.jpg";
+import { motion } from "framer-motion";
 
 const AuditsPage = () => {
   return (
     <div>
       <Hero title="Audits" />
-      <TextImg
-        img={travaux}
-        text="Nos services d'audit énergétique couvrent tous les aspects de votre
-          consommation d'énergie, de l'analyse de vos factures à l'inspection de
-          vos équipements. Nous identifions les inefficacités, proposons des
-          solutions pratiques et durables, et suivons les performances pour
-          garantir des résultats optimaux à long terme."
-      />
-
+      <TextImg img={travaux}>
+        <motion.h2 className="w-full">Nos services</motion.h2>
+        <motion.p className="w-full text-xl">
+          Nos services d&apos;audit énergétique couvrent tous les aspects de
+          votre consommation d&apos;énergie, de l&apos;analyse de vos factures à
+          l&apos;inspection de vos équipements. Nous identifions les
+          inefficacités, proposons des solutions pratiques et durables, et
+          suivons les performances pour garantir des résultats optimaux à long
+          terme.
+        </motion.p>
+      </TextImg>
       <section className="bg-primaryGreen py-10">
         <h2 className="container mx-auto">Pourquoi Choisir Audicée ?</h2>
         <Block2 array={prestationCards} />
