@@ -25,7 +25,7 @@ const Card = ({
   return (
     <div
       key={key}
-      className={`w-72 h-96 flex-shrink-0 lg:shrink	rounded-lg shadow-xl relative overflow-hidden m-1 ${
+      className={`w-auto h-96 flex-shrink-0 lg:shrink	rounded-lg shadow-xl relative overflow-hidden m-1 ${
         isHovered ? "shadow-lg" : "shadow-2xl"
       }`}
       onMouseEnter={handleCardOn}

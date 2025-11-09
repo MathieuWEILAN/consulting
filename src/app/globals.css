@@ -4,13 +4,26 @@
 
 @layer base {
   body {
-    @apply text-slate-950 bg-stone-50 max-w-[2000px] mx-auto;
+    @apply text-slate-950 bg-stone-50 w-full;
+    font-family: var(--font-manrope), sans-serif;
+    max-width: min(2000px, 100vw);
+    margin: 0 auto;
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-montserrat), sans-serif !important;
+  }
+
   h1 {
-    @apply my-4 flex text-2xl lg:text-[50px] leading-8 tracking-wide;
+    @apply my-4 flex text-2xl lg:text-[50px] leading-8;
   }
   h2 {
-    @apply text-2xl xl:text-[36px] font-bold my-4 leading-10 tracking-wide;
+    @apply text-2xl xl:text-[36px] font-bold my-4 leading-10;
   }
   h3 {
     @apply text-xl font-bold my-2;
@@ -18,6 +31,7 @@
 
   p {
     @apply text-base lg:text-lg;
+    font-family: var(--font-manrope), sans-serif;
   }
   input {
     @apply rounded-xl px-4 py-2.5 border border-slate-300 focus:outline-none focus:border-slate-500;

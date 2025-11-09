@@ -94,7 +94,7 @@ const Header = () => {
               className="w-14 h-14 lg:w-full lg:h-auto rounded-full shadow-xl lg:rounded-lg flex space-x-2 justify-center items-center bg-stone-50 lg:px-4 lg:py-2 text-slate-950 hover:bg-primaryGreen hover:text-white transition duration-300"
             >
               <PhoneIcon />
-              <span className="hidden lg:block">01 86 22 31 85</span>
+              <span className="hidden xl:block">01 86 22 31 85</span>
             </a>
             <button
               className="w-14 h-14 shadow-xl rounded-full lg:hidden"
@@ -124,7 +124,7 @@ const Header = () => {
 
       {/* MOBILE NAV (placé EN DEHORS du header) */}
       <nav
-        className={`lg:hidden z-40 w-screen shadow-lg absolute top-20 left-0 flex bg-slate-50 transform transition-transform duration-500 ${
+        className={`fixed top-20 lg:hidden z-40 w-screen shadow-lg left-0 flex bg-slate-50 transform transition-transform duration-500 ${
           isMenuMobile ? "translate-y-0" : "-translate-y-full"
         }`}
       >

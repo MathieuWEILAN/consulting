@@ -2,8 +2,8 @@ const PhoneIcon = () => {
   return (
     <svg
       fill="#000000"
-      height="16px"
-      width="16px"
+      height="18px"
+      width="18px"
       version="1.1"
       id="Capa_1"
       xmlns="http://www.w3.org/2000/svg"

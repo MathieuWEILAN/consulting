@@ -61,27 +61,23 @@ export const arrayCards = [
   {
     image: step1,
     title: "ÉTUDE ÉNERGÉTIQUE",
-    text: "Réalisez une étude complète de votre habitat avec un de nos experts énergétiques puis recevez instantanément votre étude et le devis détaillé de votre projet aides déduites.",
-  },
-  {
-    image: step2,
-    title: "VISITE TECHNIQUE",
-    text: "Un de nos auditeurs énergétiques se déplace à votre domicile afin de confirmer la faisabilité technique de votre projet de rénovation énergétique.",
+    text: "Nous réalisions une étude complète de votre habitat avec un de nos experts énergétiques puis et envoyons instantanément votre étude et le devis détaillé de votre projet aides déduites.",
   },
   {
     image: step3,
-    title: "DÉMARCHES ADMINISTRATIVES",
-    text: "Un chargé de projet dédié réalise pour vous toutes les démarches nécessaires à l’obtention de vos aides ainsi que les formalités administratives pour vos travaux.",
+    title: "ACCOMPAGNER VOS DÉMARCHES",
+    text: "Nous gérons vos demandes pour maximiser vos aides financières.",
   },
+  {
+    image: step2,
+    title: "ÊTRE VITRE TIERS DE CONFIANCE",
+    text: "Nous sommes le lien direct entre vous, les artisans et les financeurs, sans stresse.",
+  },
+
   {
     image: step4,
-    title: "SUPERVISATION DES TRAVAUX",
-    text: "Un de nos professionnels certifiés RGE se déplace chez vous pour réaliser vos travaux de rénovation énergétique. Vos travaux sont couverts par notre garantie décennale.",
-  },
-  {
-    image: step5,
-    title: "SUIVI CLIENT",
-    text: "Bénéficiez d’un service client à votre écoute pour toutes vos questions durant toute la durée de vie de votre installation.",
+    title: "FOURNIR DES PRÉCONISATIONS PERSONNALISÉES",
+    text: "Nous adaptons des solutions personnalisées pour réduire vos factures et améliorer votre confort.",
   },
 ];
 

@@ -9,11 +9,11 @@ type CardType = {
 
 const Block1 = ({ array }: { array: CardType[] }) => {
   return (
-    <section className="block1 w-full mx-auto pt-0 lg:my-10">
-      <h2 className="lg:container mx-auto p-5 lg:p-10">
+    <section className="block1 pt-0 my-10 container mx-auto">
+      <h2 className="p-5 lg:p-10">
         Nous vous accompagnons dans chaque étape de votre projet de rénovation
       </h2>
-      <div className="flex my-2.5 w-full h-full overflow-auto pt-2.5 pb-6 scrollbar-hide container mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         {array.map((el, i) => {
           const step = i + 1;
           return (

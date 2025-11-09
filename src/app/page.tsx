@@ -33,7 +33,12 @@ export default function HomePage() {
       <section className="bg-fixed bg-cover bg-[url('/panneaux.jpg')]">
         <div className="w-full flex items-center justify-center flex-col mx-auto py-20 text-white bg-opacity-90 bg-primaryBlue z-10 px-5">
           <h2>Contactez-nous pour votre projet de rénovation</h2>
-          <Button text={"Contactez-nous"} />
+          <a
+            href="mailto:auditenergie77@gmail.com"
+            className="w-fit border-2 py-2.5 px-4 rounded-full uppercase bg-slate-50 border-primaryBlue text-primaryBlue hover:border-slate-50 hover:bg-primaryBlue hover:text-slate-50 font-bold"
+          >
+            Contactez-nous
+          </a>
         </div>
       </section>
       <TextImg img={engagement} className="bg-primaryGreen" order="right">
