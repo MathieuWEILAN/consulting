@@ -1,10 +1,5 @@
 "use client";
 
-import monAccompagnateurRenov from "../../assets/img/mar-nobg.webp";
-import maPrimRenov from "../../assets/img/mpr-bg.png";
-import opqibi from "../../assets/img/opqibi-numero.png";
-import rge from "../../assets/img/RGE.png";
-import anah from "../../assets/img/anah.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 const BlockLogo = ({ className }: { className?: string }) => {
@@ -20,32 +15,47 @@ const BlockLogo = ({ className }: { className?: string }) => {
         }}
       >
         <Image
-          src={monAccompagnateurRenov}
+          src={
+            "https://res.cloudinary.com/df1icoftf/image/upload/v1779374684/mar-nobg_dylqtr.webp"
+          }
           width={100}
+          height={100}
           alt="Certifié Mon Accompagnateur Rénov'"
           className="w-auto lg:w-auto h-10 lg:h-20 object-contain bg-white rounded-lg mx-auto"
         />
         <Image
-          src={maPrimRenov}
+          src={
+            "https://res.cloudinary.com/df1icoftf/image/upload/v1779374653/mpr-bg_jevfax.webp"
+          }
           width={100}
+          height={100}
           alt="Partenaire MaPrimeRénov"
           className="w-auto lg:w-auto h-10 lg:h-20 object-contain bg-white p-2.5 rounded-lg mx-auto"
         />{" "}
         <Image
-          src={opqibi}
+          src={
+            "https://res.cloudinary.com/df1icoftf/image/upload/v1779374590/opqibi-numero_pbofoy.webp"
+          }
           width={100}
+          height={100}
           alt="Certifié OPQIBI"
           className="w-auto lg:w-auto h-10 lg:h-20 object-contain rounded-lg mx-auto"
         />{" "}
         <Image
-          src={rge}
+          src={
+            "https://res.cloudinary.com/df1icoftf/image/upload/v1779374485/RGE_y0o5f9.webp"
+          }
           width={100}
+          height={100}
           alt="Label RGE - Reconnu Garant de l'Environnement"
           className="w-auto lg:w-full h-10 lg:h-20 object-contain mx-auto"
         />{" "}
         <Image
-          src={anah}
+          src={
+            "https://res.cloudinary.com/df1icoftf/image/upload/v1779374384/anah_lupmve.webp"
+          }
           width={100}
+          height={100}
           alt="Partenaire ANAH"
           className="w-auto lg:w-auto h-10 lg:h-20 object-contain bg-white p-2.5 rounded-lg mx-auto"
         />

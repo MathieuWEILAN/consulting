@@ -2,7 +2,6 @@
 
 import React from "react";
 import { motion, Variants } from "framer-motion";
-import { StaticImageData } from "next/image";
 import Image from "next/image";
 
 import Link from "next/link";
@@ -17,9 +16,10 @@ const TextImg = ({
   link,
   order,
   children,
+  priority,
 }: {
   text?: string;
-  img: StaticImageData;
+  img: string;
   alt?: string;
   className?: string;
   title?: string;
@@ -27,6 +27,7 @@ const TextImg = ({
   link?: string;
   order?: string;
   children?: React.ReactNode;
+  priority?: boolean;
 }) => {
   const upVariants: Variants = {
     offscreen: {
@@ -66,9 +67,12 @@ const TextImg = ({
         </motion.div>
         <Image
           src={img}
+          width={700}
+          height={200}
+          priority={priority}
           alt={alt ?? ""}
-          loading="lazy"
-          placeholder="blur"
+          loading={priority ? "eager" : "lazy"}
+          placeholder="empty"
           className={`${className} w-full lg:w-1/2 lg:h-full object-cover object-center z-10 ${
             order === "right" ? "order-1" : "order-2"
           }`}

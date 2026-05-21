@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { StaticImageData } from "next/image";
 
 const Card = ({
   image,
@@ -10,7 +9,7 @@ const Card = ({
   key,
   step,
 }: {
-  image: StaticImageData;
+  image: string;
   text: string;
   title: string;
   key: number;
@@ -33,7 +32,7 @@ const Card = ({
       onMouseLeave={handleCardOut}
     >
       <Image
-        src={image.src}
+        src={image}
         alt="Vercel Logo"
         width={700}
         height={24}

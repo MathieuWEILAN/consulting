@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { StaticImageData } from "next/image";
 
 const CardPrestations = ({
   image,
@@ -7,7 +6,7 @@ const CardPrestations = ({
   title,
   href,
 }: {
-  image: StaticImageData;
+  image: string;
   text: string;
   title: string;
   href: string;
@@ -15,7 +14,7 @@ const CardPrestations = ({
   return (
     <div className="h-[560px] w-full bg-green-100 rounded-lg overflow-hidden relative shadow-xl mx-auto my-5">
       <Image
-        src={image.src}
+        src={image}
         alt="Vercel Logo"
         width={700}
         height={24}

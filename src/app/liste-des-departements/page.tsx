@@ -1,20 +1,22 @@
 import Hero from "../layout/Hero";
-import paris from "../assets/img/paris.jpg";
 import Image from "next/image";
-import france from "../assets/img/france.png";
 import { Metadata } from "next";
 import StructuredData from "../components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Zones d'Intervention Île-de-France | Audit Énergétique par Département",
-  description: "Découvrez nos zones d'intervention en Île-de-France : Paris (75), Seine-et-Marne (77), Yvelines (78), Essonne (91), Hauts-de-Seine (92), Seine-Saint-Denis (93), Val-de-Marne (94), Val-d'Oise (95). Services d'audit énergétique professionnel.",
-  keywords: "audit énergétique Paris, rénovation énergétique Seine-et-Marne, Ma Prime Rénov Yvelines, efficacité énergétique Essonne, diagnostic énergétique Hauts-de-Seine, accompagnateur rénov Seine-Saint-Denis, audit énergétique Val-de-Marne, rénovation énergétique Val-d'Oise",
+  title:
+    "Zones d'Intervention Île-de-France | Audit Énergétique par Département",
+  description:
+    "Découvrez nos zones d'intervention en Île-de-France : Paris (75), Seine-et-Marne (77), Yvelines (78), Essonne (91), Hauts-de-Seine (92), Seine-Saint-Denis (93), Val-de-Marne (94), Val-d'Oise (95). Services d'audit énergétique professionnel.",
+  keywords:
+    "audit énergétique Paris, rénovation énergétique Seine-et-Marne, Ma Prime Rénov Yvelines, efficacité énergétique Essonne, diagnostic énergétique Hauts-de-Seine, accompagnateur rénov Seine-Saint-Denis, audit énergétique Val-de-Marne, rénovation énergétique Val-d'Oise",
   alternates: {
     canonical: "/liste-des-departements",
   },
   openGraph: {
     title: "Zones d'Intervention Île-de-France | Audit Énergétique Audicée",
-    description: "Services d'audit et rénovation énergétique dans tous les départements d'Île-de-France. Experts certifiés Ma Prime Rénov.",
+    description:
+      "Services d'audit et rénovation énergétique dans tous les départements d'Île-de-France. Experts certifiés Ma Prime Rénov.",
     url: "/liste-des-departements",
   },
 };
@@ -26,10 +28,16 @@ const ListeDesDepartementsPage = () => {
         type="service"
         data={{
           name: "Services d'audit énergétique en Île-de-France",
-          description: "Services professionnels d'audit et rénovation énergétique dans tous les départements d'Île-de-France : Paris, Seine-et-Marne, Yvelines, Essonne, Hauts-de-Seine, Seine-Saint-Denis, Val-de-Marne, Val-d'Oise"
+          description:
+            "Services professionnels d'audit et rénovation énergétique dans tous les départements d'Île-de-France : Paris, Seine-et-Marne, Yvelines, Essonne, Hauts-de-Seine, Seine-Saint-Denis, Val-de-Marne, Val-d'Oise",
         }}
       />
-      <Hero image2={paris} title="Zones d'Intervention en Île-de-France" />
+      <Hero
+        image2={
+          "https://res.cloudinary.com/df1icoftf/image/upload/v1779378718/paris2_mqd3za.webp"
+        }
+        title="Zones d'Intervention en Île-de-France"
+      />
       <section className="flex flex-col items-center">
         <div className="container mx-auto p-5 lg:p-20">
           <h2>Nos Zones d&apos;Intervention en France</h2>
@@ -76,14 +84,16 @@ const ListeDesDepartementsPage = () => {
           <p>
             Si vous résidez dans l&apos;un de ces départements et envisagez
             d&apos;améliorer l&apos;efficacité énergétique de votre domicile,
-            Audicée est votre partenaire de confiance.
-            Contactez-nous aujourd&apos;hui pour découvrir comment nous pouvons
-            vous aider à réaliser des économies significatives tout en
-            contribuant à la protection de l&apos;environnement.
+            Audicée est votre partenaire de confiance. Contactez-nous
+            aujourd&apos;hui pour découvrir comment nous pouvons vous aider à
+            réaliser des économies significatives tout en contribuant à la
+            protection de l&apos;environnement.
           </p>
         </div>
         <Image
-          src={france}
+          src={
+            "https://res.cloudinary.com/df1icoftf/image/upload/v1779378842/France_l5d1te.webp"
+          }
           alt="carte de france"
           className="w-1/2 object-contain"
         />

@@ -1,8 +1,7 @@
 import Card from "../Card";
-import { StaticImageData } from "next/image";
 
 type CardType = {
-  image: StaticImageData;
+  image: string;
   title: string;
   text: string;
 };

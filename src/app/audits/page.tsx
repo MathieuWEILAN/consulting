@@ -3,20 +3,21 @@ import Hero from "../layout/Hero";
 import Block2 from "../components/blocks/Block2";
 import { prestationCards } from "../data";
 import Image from "next/image";
-import family from "../assets/img/family.jpg";
 import TextImg from "../components/TextImg";
-import travaux from "../assets/img/travaux-renovation-globale.jpg";
 
 export const metadata: Metadata = {
   title: "Audit Énergétique Professionnel | Ma Prime Rénov Île-de-France",
-  description: "Service d'audit énergétique certifié en Île-de-France. Diagnostic complet, accompagnement Ma Prime Rénov, solutions personnalisées. Réduisez vos factures de 20 à 40%. Devis gratuit.",
-  keywords: "audit énergétique professionnel, Ma Prime Rénov, diagnostic énergétique, DPE, efficacité énergétique, rénovation énergétique, accompagnateur rénov, audit thermique, Île-de-France, Paris",
+  description:
+    "Service d'audit énergétique certifié en Île-de-France. Diagnostic complet, accompagnement Ma Prime Rénov, solutions personnalisées. Réduisez vos factures de 20 à 40%. Devis gratuit.",
+  keywords:
+    "audit énergétique professionnel, Ma Prime Rénov, diagnostic énergétique, DPE, efficacité énergétique, rénovation énergétique, accompagnateur rénov, audit thermique, Île-de-France, Paris",
   alternates: {
     canonical: "/audits",
   },
   openGraph: {
     title: "Audit Énergétique Certifié | Ma Prime Rénov Île-de-France",
-    description: "Audit énergétique complet avec accompagnement Ma Prime Rénov. Professionnels certifiés, diagnostic précis, solutions sur-mesure en Île-de-France.",
+    description:
+      "Audit énergétique complet avec accompagnement Ma Prime Rénov. Professionnels certifiés, diagnostic précis, solutions sur-mesure en Île-de-France.",
     url: "/audits",
   },
 };
@@ -25,7 +26,11 @@ const AuditsPage = () => {
   return (
     <div>
       <Hero title="Audits" />
-      <TextImg img={travaux}>
+      <TextImg
+        img={
+          "https://res.cloudinary.com/df1icoftf/image/upload/v1779375392/travaux-renovation-globale.0hit6o_6o79u4_eedlop.webp"
+        }
+      >
         <h2 className="w-full">Nos services</h2>
         <p className="w-full text-xl">
           Nos services d&apos;audit énergétique couvrent tous les aspects de
@@ -68,10 +73,13 @@ const AuditsPage = () => {
             </ul>
           </div>
           <Image
-            src={family}
+            src={
+              "https://res.cloudinary.com/df1icoftf/image/upload/v1779375289/family_mxfnxl.webp"
+            }
             alt=""
             className="w-full lg:w-1/2 h-auto object-cover object-center"
             width={700}
+            height={700}
           ></Image>
         </div>
       </section>

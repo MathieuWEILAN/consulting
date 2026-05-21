@@ -1,12 +1,3 @@
-import step1 from "./assets/img/step1.jpg";
-import step2 from "./assets/img/step2.jpg";
-import step3 from "./assets/img/step3.jpg";
-import step4 from "./assets/img/step4.jpg";
-import step5 from "./assets/img/step5.jpg";
-import photo2 from "./assets/img/photo2.jpg";
-import trees from "./assets/img/trees.webp";
-import { StaticImageData } from "next/dist/shared/lib/get-img-props";
-
 interface SubmenuItem {
   title: string;
   subtitle: string;
@@ -20,7 +11,7 @@ interface MenuItem {
 }
 
 export type CardType = {
-  image?: StaticImageData;
+  image?: string;
   title?: string;
   text?: string;
   href?: string;
@@ -30,9 +21,10 @@ export type CommentsCardType = {
   comment: string;
   firstName: string;
   lastName: string;
-  photo?: StaticImageData;
+  photo?: string;
   stars: number;
 };
+
 export const menu: MenuItem[] = [
   {
     titleName: "Accueil",
@@ -59,23 +51,27 @@ export const menu: MenuItem[] = [
 
 export const arrayCards = [
   {
-    image: step1,
+    image:
+      "https://res.cloudinary.com/df1icoftf/image/upload/v1779376428/step1_bllzhc.webp",
     title: "ÉTUDE ÉNERGÉTIQUE",
     text: "Nous réalisions une étude complète de votre habitat avec un de nos experts énergétiques puis et envoyons instantanément votre étude et le devis détaillé de votre projet aides déduites.",
   },
   {
-    image: step3,
+    image:
+      "https://res.cloudinary.com/df1icoftf/image/upload/v1779376579/step3_jdv5gl.webp",
     title: "ACCOMPAGNER VOS DÉMARCHES",
     text: "Nous gérons vos demandes pour maximiser vos aides financières.",
   },
   {
-    image: step2,
+    image:
+      "https://res.cloudinary.com/df1icoftf/image/upload/v1779376580/step2_n0hqy5.webp",
     title: "ÊTRE VITRE TIERS DE CONFIANCE",
     text: "Nous sommes le lien direct entre vous, les artisans et les financeurs, sans stresse.",
   },
 
   {
-    image: step4,
+    image:
+      "https://res.cloudinary.com/df1icoftf/image/upload/v1779375114/check_rmnpse.webp",
     title: "FOURNIR DES PRÉCONISATIONS PERSONNALISÉES",
     text: "Nous adaptons des solutions personnalisées pour réduire vos factures et améliorer votre confort.",
   },
@@ -83,19 +79,22 @@ export const arrayCards = [
 
 export const prestationCards = [
   {
-    image: step1,
+    image:
+      "https://res.cloudinary.com/df1icoftf/image/upload/v1779376428/step1_bllzhc.webp",
     title: "Expertise Technique",
     text: "Notre équipe d'experts est composée de professionnels chevronnés possédant une connaissance approfondie des meilleures pratiques en matière d'efficacité énergétique.",
     // href: "/lala",
   },
   {
-    image: photo2,
+    image:
+      "https://res.cloudinary.com/df1icoftf/image/upload/v1779376579/photo2_e5meys.webp",
     title: "Solutions Personnalisées",
     text: "Nous comprenons que chaque entreprise est unique, c'est pourquoi nous développons des solutions sur mesure adaptées à vos besoins spécifiques.",
     // href: "/lolo",
   },
   {
-    image: trees,
+    image:
+      "https://res.cloudinary.com/df1icoftf/image/upload/v1779376579/photo2_e5meys.webp",
     title: "Engagement envers l’Environnement",
     text: "Chez Audicée, nous sommes fiers de notre engagement envers la durabilité environnementale. En travaillant avec nous, vous contribuez à un avenir plus vert pour tous.",
     // href: "/lele",
@@ -141,7 +140,8 @@ export const commentsCards: CommentsCardType[] = [
       "Nous vous assistons dans le devis et l'installation de panneaux solaires",
     firstName: "Mathieu",
     lastName: "WEILAN",
-    photo: trees,
+    photo:
+      "https://res.cloudinary.com/df1icoftf/image/upload/v1779376579/photo2_e5meys.webp",
     stars: 5,
   },
   {
@@ -149,7 +149,8 @@ export const commentsCards: CommentsCardType[] = [
       "Nous vous assistons dans le devis et l'installation de panneaux solaires",
     firstName: "lele",
     lastName: "MAMA",
-    photo: trees,
+    photo:
+      "https://res.cloudinary.com/df1icoftf/image/upload/v1779376579/photo2_e5meys.webp",
     stars: 5,
   },
   {
@@ -157,7 +158,8 @@ export const commentsCards: CommentsCardType[] = [
       "Nous vous assistons dans le devis et l'installation de pompe à chaleur afin de  chauffer écologiquement votre habitat.",
     firstName: "lalal",
     lastName: "lele",
-    photo: trees,
+    photo:
+      "https://res.cloudinary.com/df1icoftf/image/upload/v1779376579/photo2_e5meys.webp",
     stars: 5,
   },
   {
@@ -165,7 +167,8 @@ export const commentsCards: CommentsCardType[] = [
       "Nous vous assistons dans le devis et l'installation de pompe à chaleur afin de  chauffer écologiquement votre habitat.",
     firstName: "lalal",
     lastName: "lele",
-    photo: trees,
+    photo:
+      "https://res.cloudinary.com/df1icoftf/image/upload/v1779376579/photo2_e5meys.webp",
     stars: 5,
   },
   {
@@ -173,7 +176,8 @@ export const commentsCards: CommentsCardType[] = [
       "Nous vous assistons dans le devis et l'installation de pompe à chaleur afin de  chauffer écologiquement votre habitat.",
     firstName: "lalal",
     lastName: "lele",
-    photo: trees,
+    photo:
+      "https://res.cloudinary.com/df1icoftf/image/upload/v1779376579/photo2_e5meys.webp",
     stars: 5,
   },
   {
@@ -181,7 +185,8 @@ export const commentsCards: CommentsCardType[] = [
       "Nous vous assistons dans le devis et l'installation de pompe à chaleur afin de  chauffer écologiquement votre habitat.",
     firstName: "lalal",
     lastName: "lele",
-    photo: trees,
+    photo:
+      "https://res.cloudinary.com/df1icoftf/image/upload/v1779376579/photo2_e5meys.webp",
     stars: 5,
   },
 ];

@@ -1,18 +1,20 @@
 import { Metadata } from "next";
 import Hero from "../layout/Hero";
-import contact from "../assets/img/contact.jpg";
 import { company } from "../config";
 
 export const metadata: Metadata = {
   title: "Contact Audit Énergétique | Devis Gratuit Ma Prime Rénov",
-  description: "Contactez nos experts audit énergétique en Île-de-France. Devis gratuit, accompagnement Ma Prime Rénov, conseil personnalisé. ☎️ 01-86-22-31-85 - Réponse sous 24h.",
-  keywords: "contact audit énergétique, devis gratuit rénovation énergétique, Ma Prime Rénov contact, expert énergétique Île-de-France, accompagnateur rénov contact, diagnostic énergétique devis",
+  description:
+    "Contactez nos experts audit énergétique en Île-de-France. Devis gratuit, accompagnement Ma Prime Rénov, conseil personnalisé. ☎️ 01-86-22-31-85 - Réponse sous 24h.",
+  keywords:
+    "contact audit énergétique, devis gratuit rénovation énergétique, Ma Prime Rénov contact, expert énergétique Île-de-France, accompagnateur rénov contact, diagnostic énergétique devis",
   alternates: {
     canonical: "/contact",
   },
   openGraph: {
     title: "Contact Expert Audit Énergétique | Devis Gratuit Île-de-France",
-    description: "Obtenez votre devis gratuit d'audit énergétique. Experts certifiés Ma Prime Rénov en Île-de-France. Contact immédiat.",
+    description:
+      "Obtenez votre devis gratuit d'audit énergétique. Experts certifiés Ma Prime Rénov en Île-de-France. Contact immédiat.",
     url: "/contact",
   },
 };
@@ -20,7 +22,12 @@ export const metadata: Metadata = {
 const ContactPage = () => {
   return (
     <>
-      <Hero image2={contact} title="Contactez-nous" />
+      <Hero
+        image2={
+          "https://res.cloudinary.com/df1icoftf/image/upload/v1779375675/contact.0bkbevg16j_k-_oa97pj.webp"
+        }
+        title="Contactez-nous"
+      />
       <section className="container py-10 mx-auto">
         <p className="lg:px-20">
           Faites confiance à Audicée pour vous accompagner vers une rénovation

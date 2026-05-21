@@ -1,17 +1,10 @@
 import { Metadata } from "next";
-import logoRenov from "../assets/img/logo_MAR.jpg";
 import Image from "next/image";
-import anah from "../assets/img/anah.png";
-import money from "../assets/img/money.jpg";
-import house from "../assets/img/maison-projet.jpg";
+import Link from "next/link";
 import Hero from "../layout/Hero";
 import TextImg from "../components/TextImg";
 import Block1 from "../components/blocks/Block1";
 import { arrayCards } from "../data";
-import Link from "next/link";
-import renov from "../assets/img/renov.webp";
-import france from "../assets/img/france.png";
-import mains from "../assets/img/mains.jpg";
 
 export const metadata: Metadata = {
   title: "Mon Accompagnateur Rénov' Agréé ANAH | Audicée Île-de-France",
@@ -33,15 +26,21 @@ export default function MonAccompagneurRenovPage() {
     <>
       <section className="relative">
         <Hero
-          image1={logoRenov}
-          image2={house}
+          image1={
+            "https://res.cloudinary.com/df1icoftf/image/upload/v1779378441/logo_MAR.019g10o0w9mv._kh04pr.webp"
+          }
+          image2={
+            "https://res.cloudinary.com/df1icoftf/image/upload/v1779377377/maison-projet-min_udck6d.webp"
+          }
           title="Mon Accompagnateur Renov"
         />
       </section>
-      <TextImg img={renov}>
-        <h2 className="w-full">
-          AUDICÉE est agréé Mon accompagnateur Rénov
-        </h2>
+      <TextImg
+        img={
+          "https://res.cloudinary.com/df1icoftf/image/upload/v1779377973/renov_hkeiqq.webp"
+        }
+      >
+        <h2 className="w-full">AUDICÉE est agréé Mon accompagnateur Rénov</h2>
         <p className="w-full text-xl">
           Chez Audicée, nous sommes fiers d&apos;être agréés Mon Accompagnateur
           Rénov&apos; par l&apos;ANAH et partenaires de MaPrimeRénov, deux
@@ -53,7 +52,9 @@ export default function MonAccompagneurRenovPage() {
         </p>
       </TextImg>
       <TextImg
-        img={anah}
+        img={
+          "https://res.cloudinary.com/df1icoftf/image/upload/v1779374384/anah_lupmve.webp"
+        }
         className={"p-10 bg-white h-full w-full"}
         order="right"
       >
@@ -71,7 +72,11 @@ export default function MonAccompagneurRenovPage() {
         </p>
       </TextImg>
 
-      <TextImg img={money}>
+      <TextImg
+        img={
+          "https://res.cloudinary.com/df1icoftf/image/upload/v1779376817/money_uckrh5.webp"
+        }
+      >
         <h2 className="w-full">Ce que cela signifie pour vous</h2>
         <p className="w-full text-xl">
           En choisissant Audicée pour vos besoins en rénovation énergétique,
@@ -82,7 +87,12 @@ export default function MonAccompagneurRenovPage() {
           MaPrimeRénov.
         </p>
       </TextImg>
-      <TextImg img={mains} order={"right"}>
+      <TextImg
+        img={
+          "https://res.cloudinary.com/df1icoftf/image/upload/v1779377554/main-min_khlt4b.webp"
+        }
+        order={"right"}
+      >
         <h2 className="w-full">Notre Engagement Continu</h2>
         <p className="w-full text-xl">
           En tant que partenaire agréé Mon Accompagnateur Rénov&apos;, nous nous
@@ -97,7 +107,9 @@ export default function MonAccompagneurRenovPage() {
       <section className="bg-primaryGreen">
         <div className="container mx-auto flex flex-col lg:flex-row py-10">
           <Image
-            src={france}
+            src={
+              "https://res.cloudinary.com/df1icoftf/image/upload/v1779378523/France_l5d1te.webp"
+            }
             alt="France"
             width={500}
             height={500}

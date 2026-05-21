@@ -1,5 +1,6 @@
 import { Metadata } from "next";
-import money from "../assets/img/money.jpg";
+import TextImg from "../components/TextImg";
+import Hero from "../layout/Hero";
 
 export const metadata: Metadata = {
   title: "Qui Sommes-Nous | Audicée",
@@ -15,24 +16,23 @@ export const metadata: Metadata = {
     url: "/qui-sommes-nous",
   },
 };
-import engagement from "../assets/img/engagement.jpg";
-import analyse from "../assets/img/analyse.jpg";
-import green from "../assets/img/green.jpg";
-import TextImg from "../components/TextImg";
-import Hero from "../layout/Hero";
 
 export default function MonAccompagneurRenov() {
   return (
     <>
       <Hero
-        image2={analyse}
+        image2={
+          "https://res.cloudinary.com/df1icoftf/image/upload/v1779374968/analyse_wvfrvm.webp"
+        }
         title={
           "Notre objectif : Rendre votre ménage plus durable, un audit à la fois."
         }
       />
 
       <TextImg
-        img={green}
+        img={
+          "https://res.cloudinary.com/df1icoftf/image/upload/v1779377169/green-min_ubaqur.webp"
+        }
         text="Chez Audicée, nous sommes dévoués à aider les ménages à naviguer
             vers un avenir plus durable en maximisant leur efficacité
             énergétique et en réduisant leur impact environnemental. Notre
@@ -41,7 +41,9 @@ export default function MonAccompagneurRenov() {
         title={"Rendre votre ménage plus durable, un audit à la fois."}
       />
       <TextImg
-        img={green}
+        img={
+          "https://res.cloudinary.com/df1icoftf/image/upload/v1779377169/green-min_ubaqur.webp"
+        }
         text="Notre mission est de fournir des solutions d'audit énergétique de pointe,
         personnalisées pour répondre aux besoins uniques de chaque ménage. Nous nous
         engageons à apporter des changements concrets et mesurables qui contribuent à la
@@ -51,7 +53,9 @@ export default function MonAccompagneurRenov() {
         order={"right"}
       />
       <TextImg
-        img={money}
+        img={
+          "https://res.cloudinary.com/df1icoftf/image/upload/v1779376817/money_uckrh5.webp"
+        }
         text="Chez Audicée, nous croyons en une approche holistique de l'efficacité énergétique.
         Nous commençons par une analyse approfondie de vos opérations pour identifier les
         opportunités d'amélioration. Ensuite, nous collaborons avec vous pour développer
@@ -62,7 +66,9 @@ export default function MonAccompagneurRenov() {
 
       <TextImg
         title="Nos Services"
-        img={engagement}
+        img={
+          "https://res.cloudinary.com/df1icoftf/image/upload/v1779377242/engagement.0t03h4m.nxgh6_cdmj6g.webp"
+        }
         text="Nos services d'audit énergétique couvrent tous les aspects de votre consommation
         d'énergie, de l'analyse de vos factures à l'inspection de vos équipements. Nous
         identifions les inefficacités, proposons des solutions pratiques et durables, et suivons

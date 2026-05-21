@@ -1,11 +1,7 @@
 import { Metadata } from "next";
 import HeroVideo from "./layout/HeroVideo";
-import maison from "./assets/img/maison-projet.jpg";
 import TextImg from "./components/TextImg";
-import engagement from "./assets/img/engagement.jpg";
-import green from "./assets/img/green-homepage.png";
 import BlockLogo from "./components/blocks/BlockLogo";
-import analyse from "./assets/img/analyse.jpg";
 import { company } from "./config";
 
 export const metadata: Metadata = {
@@ -28,7 +24,13 @@ export default function HomePage() {
     <>
       <HeroVideo title="Experts en Audit Énergétique" />
       <BlockLogo className="pb-4" />
-      <TextImg img={green} className="bg-primaryGreen">
+      <TextImg
+        priority
+        img={
+          "https://res.cloudinary.com/df1icoftf/image/upload/v1779377169/green-min_ubaqur.webp"
+        }
+        className="bg-primaryGreen"
+      >
         <h2 className="w-full">
           Rendre votre ménage plus durable, un audit à la fois.
         </h2>
@@ -44,7 +46,7 @@ export default function HomePage() {
         </p>{" "}
       </TextImg>
       <section className="bg-fixed bg-cover bg-[url('/panneaux.jpg')]">
-        <div className="w-full flex items-center justify-center flex-col mx-auto py-20 text-white bg-opacity-90 bg-primaryBlue z-10 px-5">
+        <div className="lg:h-[500px] h-auto w-full flex items-center justify-center flex-col mx-auto py-20 text-white bg-opacity-90 bg-primaryBlue z-10 px-5">
           <h2>Contactez-nous pour votre projet de rénovation</h2>
           <a
             href={`mailto:${company.email.public}`}
@@ -54,7 +56,13 @@ export default function HomePage() {
           </a>
         </div>
       </section>
-      <TextImg img={engagement} className="bg-primaryGreen" order="right">
+      <TextImg
+        img={
+          "https://res.cloudinary.com/df1icoftf/image/upload/v1779377242/engagement.0t03h4m.nxgh6_cdmj6g.webp"
+        }
+        className="bg-primaryGreen"
+        order="right"
+      >
         <h2 className="w-full">Notre mission</h2>
         <p className="w-full text-xl">
           Notre mission est de fournir des solutions d&apos;audit énergétique de
@@ -64,7 +72,12 @@ export default function HomePage() {
           planète tout en améliorant la rentabilité de nos clients.
         </p>
       </TextImg>
-      <TextImg img={analyse} className="bg-primaryGreen">
+      <TextImg
+        img={
+          "https://res.cloudinary.com/df1icoftf/image/upload/f_auto,q_auto/v1779373486/analyse_eqculr.jpg"
+        }
+        className="bg-primaryGreen"
+      >
         <h2 className="w-full">Notre approche</h2>
         <p className="w-full text-xl">
           Chez Audicée, nous croyons en une approche holistique de
@@ -77,7 +90,9 @@ export default function HomePage() {
         </p>
       </TextImg>
       <TextImg
-        img={maison}
+        img={
+          "https://res.cloudinary.com/df1icoftf/image/upload/v1779377377/maison-projet-min_udck6d.webp"
+        }
         className="bg-primaryGreen"
         order="right"
         link="/audits"
