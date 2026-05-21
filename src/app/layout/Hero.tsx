@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import maison from "../assets/img/home.jpg";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 const Hero = ({
   title,
@@ -11,18 +11,10 @@ const Hero = ({
   children,
 }: {
   title?: string;
-  image1?: any;
-  image2?: any;
-  children?: any;
+  image1?: StaticImageData;
+  image2?: StaticImageData;
+  children?: React.ReactNode;
 }) => {
-  const [isHomepage, setIsHomepage] = React.useState(false);
-  React.useEffect(() => {
-    if (typeof window !== undefined) {
-      if (window.location.pathname === "/") {
-        setIsHomepage(true);
-      }
-    }
-  }, []);
   return (
     <section className="section-background">
       <motion.div className="absolute top-0 z-20">
@@ -45,9 +37,9 @@ const Hero = ({
               />
             )}
             <h1 className="text-white uppercase tracking-widest text-center w-full block">
-              {title ? title : "HOMEPAGE"}
+              {title ? title : ""}
             </h1>
-            {children && { children }}
+            {children}
           </motion.div>
         </motion.div>
       </motion.div>

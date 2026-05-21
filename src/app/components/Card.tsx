@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { useState } from "react";
 import { StaticImageData } from "next/image";
@@ -42,7 +43,7 @@ const Card = ({
       />
       <span
         aria-label={`etape ${step}`}
-        className={`mx-auto bg-slate-950 opacity-80 bg-opacity-70 absolute rounded-full mx-auto left-1/2  -translate-x-1/2  text-slate-50 flex items-center justify-center transition-all ease-in-out duration-500 ${
+        className={`mx-auto bg-slate-950 opacity-80 bg-opacity-70 absolute rounded-full left-1/2  -translate-x-1/2  text-slate-50 flex items-center justify-center transition-all ease-in-out duration-500 ${
           isHovered
             ? "top-[30px] w-10 h-10 border-4 text-lg"
             : "top-[110px] border-8 w-24 h-24 text-[40px]"

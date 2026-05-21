@@ -1,13 +1,9 @@
 "use client";
 
-import * as React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import Video from "../components/Video";
-import logo from "../assets/img/audicee-logo-sans-texte.png";
 
-import LogoIcon from "../assets/svg/LogoIcon";
-const Hero = ({ title, image1 }: { title?: string; image1?: any }) => {
+const HeroVideo = ({ title }: { title?: string }) => {
   return (
     <section className="section-background">
       <motion.div className="absolute top-0 z-20 left-1/2 -translate-x-1/2 mx-auto">
@@ -19,9 +15,13 @@ const Hero = ({ title, image1 }: { title?: string; image1?: any }) => {
               duration: 0.5,
               delay: 0.5,
             }}
-            className="flex flex-col items-center lg:pb-10"
+            className="flex flex-col items-center lg:pb-10 space-y-6"
           >
-            <LogoIcon fill="#fff" width="100%" />
+            {title && (
+              <h1 className="text-white text-center text-2xl lg:text-6xl font-bold tracking-widest uppercase px-4 max-w-xl">
+                {title}
+              </h1>
+            )}
           </motion.div>
         </motion.div>
       </motion.div>
@@ -29,4 +29,4 @@ const Hero = ({ title, image1 }: { title?: string; image1?: any }) => {
     </section>
   );
 };
-export default Hero;
+export default HeroVideo;

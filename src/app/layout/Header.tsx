@@ -3,6 +3,7 @@
 import * as React from "react";
 import Submenu from "./Submenu";
 import { menu } from "../data";
+import { company } from "../config";
 import PhoneIcon from "../assets/svg/PhoneIcon";
 import LogoIcon from "../assets/svg/LogoIcon";
 import Link from "next/link";
@@ -17,9 +18,9 @@ const Header = () => {
     {
       isVisible: false,
       type: "",
-    }
+    },
   );
-  const [scrollY, setScrollY] = React.useState(0);
+  const [scrollY, setScrollY] = React.useState<number>(0);
   const [isMenuMobile, setIsMenuMobile] = React.useState<boolean>(false);
 
   React.useEffect(() => {
@@ -40,7 +41,7 @@ const Header = () => {
             : "lg:bg-transparent lg:text-white"
         } flex w-screen h-20 z-50 fixed top-0 py-8 lg:py-0 pr-2.5 lg:px-2.5 text-lg bg-stone-50`}
       >
-        <div className="lg:container mx-auto flex items-center justify-between w-full pr-4 lg:px-4 lg:px-0">
+        <div className="flex items-center justify-between w-full pr-4 lg:px-4">
           <a href="/">
             {/* Mobile logo */}
             <LogoIcon
@@ -90,11 +91,11 @@ const Header = () => {
           {/* Phone & burger */}
           <div className="flex space-x-4">
             <a
-              href="tel:0186223185"
+              href={`tel:${company.phone.tel}`}
               className="w-14 h-14 lg:w-full lg:h-auto rounded-full shadow-xl lg:rounded-lg flex space-x-2 justify-center items-center bg-stone-50 lg:px-4 lg:py-2 text-slate-950 hover:bg-primaryGreen hover:text-white transition duration-300"
             >
               <PhoneIcon />
-              <span className="hidden xl:block">01 86 22 31 85</span>
+              <span className="hidden xl:block">{company.phone.display}</span>
             </a>
             <button
               className="w-14 h-14 shadow-xl rounded-full lg:hidden"

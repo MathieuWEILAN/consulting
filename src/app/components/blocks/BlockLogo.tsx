@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import monAccompagnateurRenov from "../../assets/img/mar-nobg.webp";
 import maPrimRenov from "../../assets/img/mpr-bg.png";
 import opqibi from "../../assets/img/opqibi-numero.png";
@@ -21,31 +22,31 @@ const BlockLogo = ({ className }: { className?: string }) => {
         <Image
           src={monAccompagnateurRenov}
           width={100}
-          alt=""
+          alt="Certifié Mon Accompagnateur Rénov'"
           className="w-auto lg:w-auto h-10 lg:h-20 object-contain bg-white rounded-lg mx-auto"
         />
         <Image
           src={maPrimRenov}
           width={100}
-          alt=""
+          alt="Partenaire MaPrimeRénov"
           className="w-auto lg:w-auto h-10 lg:h-20 object-contain bg-white p-2.5 rounded-lg mx-auto"
         />{" "}
         <Image
           src={opqibi}
           width={100}
-          alt=""
+          alt="Certifié OPQIBI"
           className="w-auto lg:w-auto h-10 lg:h-20 object-contain rounded-lg mx-auto"
         />{" "}
         <Image
           src={rge}
           width={100}
-          alt=""
+          alt="Label RGE - Reconnu Garant de l'Environnement"
           className="w-auto lg:w-full h-10 lg:h-20 object-contain mx-auto"
         />{" "}
         <Image
           src={anah}
           width={100}
-          alt=""
+          alt="Partenaire ANAH"
           className="w-auto lg:w-auto h-10 lg:h-20 object-contain bg-white p-2.5 rounded-lg mx-auto"
         />
       </motion.div>

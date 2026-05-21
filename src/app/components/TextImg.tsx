@@ -1,4 +1,5 @@
-// Code for TextImg component
+"use client";
+
 import React from "react";
 import { motion, Variants } from "framer-motion";
 import { StaticImageData } from "next/image";
@@ -9,6 +10,7 @@ import Link from "next/link";
 const TextImg = ({
   text,
   img,
+  alt,
   className,
   title,
   textLink,
@@ -18,20 +20,14 @@ const TextImg = ({
 }: {
   text?: string;
   img: StaticImageData;
+  alt?: string;
   className?: string;
   title?: string;
   textLink?: string;
   link?: string;
   order?: string;
-  children?: any;
+  children?: React.ReactNode;
 }) => {
-  const [isMobile, setIsMobile] = React.useState(false);
-
-  React.useEffect(() => {
-    if (window.innerWidth < 440) {
-      setIsMobile(true);
-    }
-  }, []);
   const upVariants: Variants = {
     offscreen: {
       y: 100,
@@ -46,19 +42,6 @@ const TextImg = ({
     },
   };
 
-  const xVariants: Variants = {
-    offscreen: {
-      x: order === "right" ? 50 : -50,
-    },
-    onscreen: {
-      x: 0,
-      transition: {
-        type: "spring",
-        bounce: 0.3,
-        duration: 1,
-      },
-    },
-  };
   return (
     <section className="w-full h-full">
       <motion.div
@@ -73,7 +56,7 @@ const TextImg = ({
             order === "right" ? "order-2" : "order-1"
           } w-full lg:w-1/2 px-4 py-10  lg:p-10 xl:p-20 text-xl flex flex-col items-end justify-center`}
         >
-          {children}{" "}
+          {children}
           {link && (
             <Link href={link} className="w-fit mt-10 relative group">
               {textLink}
@@ -83,12 +66,10 @@ const TextImg = ({
         </motion.div>
         <Image
           src={img}
-          width={1200}
-          height={800}
-          alt=""
+          alt={alt ?? ""}
           loading="lazy"
           placeholder="blur"
-          className={`w-full lg:w-1/2 ${className} lg:h-[500px] xl:h-full lg:object-cover xl:object-contain object-center z-10 ${
+          className={`${className} w-full lg:w-1/2 lg:h-full object-cover object-center z-10 ${
             order === "right" ? "order-1" : "order-2"
           }`}
         />

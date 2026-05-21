@@ -1,19 +1,15 @@
-"use client";
-import BlockForm from "../components/blocks/BlockForm";
 import BlockLogo from "../components/blocks/BlockLogo";
 import { menu } from "../data";
+import { company } from "../config";
 import Link from "next/link";
-import Image from "next/image";
-import logo from "../assets/img/audicee-logo-titre.png";
 import LogoIcon from "../assets/svg/LogoIcon";
 
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <footer className="bg-slate-50 w-full">
-      <BlockLogo className="pt-4" />
-      <BlockForm />
-      <div className="container w-full mx-auto p-4 md:py-8">
+      <BlockLogo className="py-4" />
+      <div className="w-full mx-auto p-4 lg:px-8 md:py-8">
         <div className="sm:flex items-start  sm:justify-between">
           <a
             href="/"
@@ -43,24 +39,27 @@ const Footer = () => {
             <div className="flex flex-col flex-1">
               <h3>Contact</h3>
               <a
-                href="emailto:auditenergie77@gmail.com"
+                href={`mailto:${company.email.public}`}
                 className="hover:underline cursor-pointer"
               >
-                auditenergie77@gmail.com
+                {company.email.public}
               </a>
               <a
-                href="tel:0186223185"
+                href={`tel:${company.phone.tel}`}
                 className="hover:underline cursor-pointer"
               >
-                01 86 22 31 85
+                {company.phone.display}
               </a>
               <a
-                href="https://www.google.com/maps/search/?api=1&query=7+avenue+Christian+Doppier+77600+Serris"
+                href={`https://www.google.com/maps/search/?api=1&query=${company.address.mapsQuery}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline transition-colors"
               >
-                <span>7 avenue Christian Doppier, 77600 Serris</span>
+                <span>
+                  {company.address.street}, {company.address.postalCode}{" "}
+                  {company.address.city}
+                </span>
               </a>
             </div>
           </div>

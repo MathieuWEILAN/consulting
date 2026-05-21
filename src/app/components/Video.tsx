@@ -1,5 +1,3 @@
-import React from "react";
-
 const Video = () => {
   return (
     <div className="relative">
@@ -10,7 +8,8 @@ const Video = () => {
         playsInline
         muted
         loop
-        preload="none"
+        preload="metadata"
+        poster="/panneaux.jpg"
         className="w-full h-[650px] lg:h-[700px] object-cover"
       >
         <source src="/homepage.mp4" type="video/mp4" />

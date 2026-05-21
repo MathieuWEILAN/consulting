@@ -1,6 +1,20 @@
-"use client";
-
+import { Metadata } from "next";
 import money from "../assets/img/money.jpg";
+
+export const metadata: Metadata = {
+  title: "Qui Sommes-Nous | Audicée",
+  description:
+    "Découvrez l'équipe Audicée, experts certifiés en audit et rénovation énergétique en Île-de-France. Notre engagement pour l'efficacité énergétique depuis 2020.",
+  alternates: {
+    canonical: "/qui-sommes-nous",
+  },
+  openGraph: {
+    title: "Qui Sommes-Nous | Audicée",
+    description:
+      "Experts certifiés en audit et rénovation énergétique en Île-de-France depuis 2020.",
+    url: "/qui-sommes-nous",
+  },
+};
 import engagement from "../assets/img/engagement.jpg";
 import analyse from "../assets/img/analyse.jpg";
 import green from "../assets/img/green.jpg";

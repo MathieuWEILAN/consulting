@@ -9,10 +9,14 @@ export const metadata: Metadata = {
   title: "Zones d'Intervention Île-de-France | Audit Énergétique par Département",
   description: "Découvrez nos zones d'intervention en Île-de-France : Paris (75), Seine-et-Marne (77), Yvelines (78), Essonne (91), Hauts-de-Seine (92), Seine-Saint-Denis (93), Val-de-Marne (94), Val-d'Oise (95). Services d'audit énergétique professionnel.",
   keywords: "audit énergétique Paris, rénovation énergétique Seine-et-Marne, Ma Prime Rénov Yvelines, efficacité énergétique Essonne, diagnostic énergétique Hauts-de-Seine, accompagnateur rénov Seine-Saint-Denis, audit énergétique Val-de-Marne, rénovation énergétique Val-d'Oise",
+  alternates: {
+    canonical: "/liste-des-departements",
+  },
   openGraph: {
     title: "Zones d'Intervention Île-de-France | Audit Énergétique Audicée",
     description: "Services d'audit et rénovation énergétique dans tous les départements d'Île-de-France. Experts certifiés Ma Prime Rénov.",
-  }
+    url: "/liste-des-departements",
+  },
 };
 
 const ListeDesDepartementsPage = () => {
@@ -72,7 +76,7 @@ const ListeDesDepartementsPage = () => {
           <p>
             Si vous résidez dans l&apos;un de ces départements et envisagez
             d&apos;améliorer l&apos;efficacité énergétique de votre domicile,
-            [Nom de l&apos;Entreprise] est votre partenaire de confiance.
+            Audicée est votre partenaire de confiance.
             Contactez-nous aujourd&apos;hui pour découvrir comment nous pouvons
             vous aider à réaliser des économies significatives tout en
             contribuant à la protection de l&apos;environnement.
